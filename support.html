@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+  READING-PAGE TEMPLATE
+  Reuse this file for privacy.html, terms.html and delete-data.html:
+    1. change <title>, <meta description>, the h1, and the aria-current nav link
+    2. replace the sections inside main.reading (each h2 is numbered automatically by CSS;
+       add class="unnumbered" to an h2 to skip numbering)
+    3. keep the TOC slot in step with the h2 ids (delete it for short pages)
+  Keep links relative. No external requests (fonts, scripts, analytics).
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help &amp; contact | Stackadoo</title>
+  <meta name="description" content="Answers to common questions about Stackadoo, and how to contact us.">
+  <meta name="theme-color" content="#6fbfff">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/Baloo2-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-reading">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER (identical on every page) ===== -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="icon-192.png" alt="" width="40" height="40"><span>Stackadoo</span></a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="support.html" aria-current="page">Help</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reading-wrap">
+    <!-- ===== MAIN READING CARD ===== -->
+    <main class="reading" id="main">
+      <h1>Help &amp; contact</h1>
+      <p class="lede">Stuck, curious or found something odd? Start with the questions below, or get in touch.</p>
+      <!-- Optional: <p class="meta">Last updated: DATE</p> (used on legal pages) -->
+
+      <!-- ===== TOC SLOT (optional; list each h2 id) ===== -->
+      <nav class="toc" aria-labelledby="toc-h">
+        <h2 id="toc-h">On this page</h2>
+        <ol>
+          <li><a href="#faq">Frequently asked questions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <!-- ===== SECTION 1 ===== -->
+      <section aria-labelledby="faq">
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq">
+          <details>
+            <summary>What is Stackadoo, and where can I get it?</summary>
+            <p>Stackadoo is a tower-stacking game for Android and iOS. Place blocks that have faces, build as high as you can and keep the tower standing through tremors. Coming soon to Google Play and the App Store.</p>
+          </details>
+          <details>
+            <summary>Is Stackadoo free?</summary>
+            <p>Yes. You can play everything for free and earn coins and power-ups as you go. Optional ads and optional purchases pay for the game.</p>
+          </details>
+          <details>
+            <summary>What does the No Ads Pass do?</summary>
+            <p>Removes banners and pop-up ads. Bonus video ads stay. Those are the ones you choose to watch for a free power-up, a revive, doubled coins or a second gift. You pay once and keep it forever. Power-ups are not included.</p>
+          </details>
+          <details>
+            <summary>How do I buy coins or power-ups, and how do I restore a purchase?</summary>
+            <p>Open the Shop from Home. You can spend coins on single power-ups and skins, or buy coin packs and power-up packs with real money. To restore the No Ads Pass on a new phone, tap &ldquo;Restore purchases&rdquo; at the bottom of the Shop, or go to Settings &gt; Purchases &gt; Restore purchases. Restore brings back the No Ads Pass (and the Starter Bundle&rsquo;s unlock), but not coins or power-ups you already spent or used.</p>
+          </details>
+          <details>
+            <summary>I paid, but my purchase hasn&rsquo;t arrived. What now?</summary>
+            <p>Wait a moment: if the game says &ldquo;Payment pending. You&rsquo;ll get it once it&rsquo;s confirmed.&rdquo; or &ldquo;Not confirmed yet. If you were charged, it arrives by itself.&rdquo;, the store is still confirming it and the item is added automatically. Restart the game with a network connection, then try Restore purchases. If it&rsquo;s still missing after a day, write to <a href="mailto:[[CONTACT_EMAIL]]">[[CONTACT_EMAIL]]</a> with the order number from your store receipt.</p>
+          </details>
+          <details>
+            <summary>How do I get a refund?</summary>
+            <p>Refunds are handled by Google Play or the App Store, not by us. Request one through your store account&rsquo;s order history. We can&rsquo;t issue refunds ourselves.</p>
+          </details>
+          <details>
+            <summary>Why do I see ads, and how do I change my privacy choices?</summary>
+            <p>Stackadoo shows video ads you choose to watch, a banner on most screens and a full-screen ad when you restart a run, never mid-run. In some regions (such as the EU, UK and some US states) a privacy form asks for your choice the first time you open the game, and Settings &gt; Privacy choices reopens it. If you don&rsquo;t see that row, your region doesn&rsquo;t need it. The No Ads Pass removes banners and full-screen ads.</p>
+          </details>
+          <details>
+            <summary>I changed phones or reinstalled. Is my progress gone?</summary>
+            <p>Today Stackadoo saves your progress (best height, coins, power-ups, streak, skins) on your phone only, so it doesn&rsquo;t move to a new phone by itself. Purchases made with your store account can be restored (see &ldquo;How do I buy coins or power-ups, and how do I restore a purchase?&rdquo;).</p>
+          </details>
+          <details>
+            <summary>When does the Daily tower change?</summary>
+            <p>Every day. The Daily screen shows how long until the next tower. You get one free try a day, plus one retry after watching an ad if you missed the goal.</p>
+          </details>
+          <details>
+            <summary>What happens to my Daily streak if I miss a day?</summary>
+            <p>The streak counts days you play the Daily tower in a row, up to 7, then starts over. Miss a day and it starts again at day 1. If you had a streak of 3 or more, you can watch an ad to keep it going (once in 7 days). Each day pays a reward: coins, a power-up, and on day 7 coins and a random power-up.</p>
+          </details>
+          <details>
+            <summary>Which languages does Stackadoo speak, and how do I switch?</summary>
+            <p>English and Persian. Go to Settings &gt; Language and pick one. Persian reads right to left, with Persian digits.</p>
+          </details>
+          <details>
+            <summary>Can I turn off sound, haptics or screen shake?</summary>
+            <p>Yes. In Settings, under &ldquo;Sound &amp; feel&rdquo;, switch off Sound effects, Music, Haptics or &ldquo;Reduce motion and flashes&rdquo; (which also turns off screen shake and flashing lights). Sound, Music and Haptics are in the Pause menu too. &ldquo;Block faces&rdquo;, in the Game section, hides the faces on the blocks.</p>
+          </details>
+          <details>
+            <summary>How do I contact you?</summary>
+            <p>Write to <a href="mailto:[[CONTACT_EMAIL]]">[[CONTACT_EMAIL]]</a>. Tell us your phone model, your Android or iOS version, the game version (at the bottom of Settings) and what happened. A screenshot helps.</p>
+          </details>
+          <details>
+            <summary>Why can&rsquo;t I watch an ad for a power-up?</summary>
+            <p>If a button says &ldquo;No video right now&rdquo;, no ad is ready on your phone. Try again in a moment, or buy one with coins instead. Video ads are always optional.</p>
+          </details>
+          <details>
+            <summary>Who is Stackadoo for?</summary>
+            <p>Stackadoo is made for players aged 13 and over.</p>
+          </details>
+          <details>
+            <summary>How do I delete my data?</summary>
+            <p>Everything about your game lives on your phone, and deleting the game removes it. For the data our service providers hold (crash reports, analytics, ads and purchases), see <a href="delete-data.html">Delete your data</a>.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 2 ===== -->
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <p>Email us at <a href="mailto:[[CONTACT_EMAIL]]">[[CONTACT_EMAIL]]</a>. Tell us your phone model, your Android or iOS version, the game version (at the bottom of Settings) and what happened. A screenshot helps.</p>
+        <p>Stackadoo is an independent game by [[DEVELOPER_NAME]].</p>
+      </section>
+    </main>
+  </div>
+
+  <!-- ===== FOOTER (identical on every reading page) ===== -->
+  <footer class="site-footer-lite">
+    <ul>
+      <li><a href="./">Home</a></li>
+      <li><a href="support.html">Help &amp; contact</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="delete-data.html">Delete your data</a></li>
+    </ul>
+    <p>An independent game by [[DEVELOPER_NAME]]. &copy; 2026 [[DEVELOPER_NAME]]</p>
+    <p>Google Play and the App Store are trademarks of their respective owners.</p>
+  </footer>
+</body>
+</html>

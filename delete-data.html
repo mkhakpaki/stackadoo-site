@@ -54,13 +54,14 @@
       <h1>Delete your data</h1>
       <p class="lede">Where your Stackadoo data lives, and how to delete each part. This page is honest about what I can and cannot find.</p>
 
-      <div class="callout"><p><strong>To ask for deletion of any Stackadoo data:</strong> e-mail <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a> (Stackadoo, by Mohammad Khakpaki) with the subject "Delete my Stackadoo data". Say which of the parts below you mean. If you have bought something, include your store order or transaction number. I answer within one month. What can and cannot be found is explained below.</p></div>
+      <div class="callout"><p><strong>To ask for deletion of any Stackadoo data:</strong> e-mail <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a> (Stackadoo, by Mohammad Khakpaki) with the subject "Delete my Stackadoo data". Include your <strong>Support ID</strong> (<strong>Settings &#9656; Help &amp; legal &#9656; Support ID</strong>; tap it to copy). Say which of the parts below you mean. If you have bought something, you can also include your store order or transaction number. I answer within one month. What can and cannot be found is explained below.</p></div>
 
       <nav class="toc-wrap" aria-label="Contents">
         <details class="toc">
           <summary>Contents</summary>
           <ol>
             <li><a href="#phone">On your phone</a></li>
+            <li><a href="#support-id">What your Support ID reaches</a></li>
             <li><a href="#ads">Ads</a></li>
             <li><a href="#analytics">Analytics and crash data</a></li>
             <li><a href="#purchases">Purchases at Adapty</a></li>
@@ -76,6 +77,19 @@
         <p>If your phone backs up app data (Android backup, iCloud), a reinstall may restore it. Delete the backup in your phone's settings if you want it gone. Deleting the game does not delete your purchases from the store. After reinstalling, <strong>Restore</strong> can bring back the No Ads Pass, but not used coins or power-ups.</p>
       </section>
 
+      <section aria-labelledby="support-id">
+        <h2 id="support-id">What your Support ID reaches</h2>
+        <p>The Support ID is a random code the game makes on your phone (see the <a href="privacy.html#support-id">Privacy Policy</a>). Send it to me and I will delete what is linked to it:</p>
+        <ul>
+          <li>your <strong>Adapty</strong> profile;</li>
+          <li>your <strong>Firebase Analytics</strong> data, using Google's User Deletion API;</li>
+          <li>the <strong>Crashlytics</strong> reports linked to it, where Firebase's tools let me (they are deleted automatically after 90 days in any case);</li>
+          <li>the <strong>e-mails</strong> you sent me that carry it.</li>
+        </ul>
+        <p><strong>The code does not reach</strong> Google's own ad data, Google Signals data linked to your Google account, or anything sent before the game had a Support ID, or while analytics consent was not granted (no Support ID is attached to analytics then). For those, use the steps below and Google's own controls.</p>
+        <p>Some records may have to be kept where the law requires. Deleting the game and clearing its data gives you a new code, so keep your old one if you want to ask later.</p>
+      </section>
+
       <section aria-labelledby="ads">
         <h2 id="ads">Ads</h2>
         <ul>
@@ -89,15 +103,15 @@
 
       <section aria-labelledby="analytics">
         <h2 id="analytics">Analytics and crash data</h2>
-        <p>Firebase keeps crash reports for 90 days, then deletes them automatically. Analytics data linked to your installation is deleted automatically 14 months after the last time you play; totals that identify no one, such as daily counts, are kept longer. The game shows no identifier that links this data to you, so <strong>I cannot find your records by name or e-mail</strong>, and I cannot delete a single person's analytics or crash data on request.</p>
+        <p>Firebase keeps crash reports for 90 days, then deletes them automatically. Analytics data linked to your installation is deleted automatically 14 months after the last time you play; totals that identify no one, such as daily counts, are kept longer. To delete data linked to you, send me your Support ID (see above). Data not linked to it, such as totals that identify no one, cannot be deleted for one person.</p>
         <p>Uninstalling the game stops any new data from being sent. You can also reset your advertising ID (see above), which breaks the link between old and new ad-related data.</p>
         <p>More in the <a href="privacy.html#firebase">Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" rel="external">Firebase's privacy page</a>.</p>
       </section>
 
       <section aria-labelledby="purchases">
         <h2 id="purchases">Purchases at Adapty</h2>
-        <p>Adapty keeps a purchase profile for your installation, with an anonymous ID, your purchase history and store country. You cannot see that ID in the game, so to find your profile I need a purchase to look it up by.</p>
-        <p><strong>To ask for deletion:</strong> e-mail <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a> with your store order or transaction number:</p>
+        <p>Adapty keeps a purchase profile for your installation, with your Support ID as its customer ID, your purchase history and store country. Your Support ID is the quickest way to find it.</p>
+        <p><strong>To ask for deletion:</strong> e-mail <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a> with your Support ID. If you can no longer see it, for example after a reinstall, use your store order or transaction number instead:</p>
         <ul>
           <li><strong>Google Play:</strong> the order ID, which starts with <code>GPA.</code> It is in your Google Play receipt e-mail and in Google Play's order history.</li>
           <li><strong>App Store:</strong> the order ID or the receipt from Apple's purchase e-mail.</li>

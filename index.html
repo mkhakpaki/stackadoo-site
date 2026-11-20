@@ -6,62 +6,73 @@
   <title>Stackadoo: a wobbly tower-stacking game for Android and iOS</title>
   <meta name="description" content="Stackadoo is a tower-stacking game with wobbly block characters. Place them, survive the tremors and climb past landmarks into space.">
   <meta name="theme-color" content="#6fbfff">
+  <link rel="canonical" href="https://mkhakpaki.github.io/stackadoo-site/">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <!-- Open Graph needs an absolute image URL; fill it in once the final address is known. -->
-  <meta property="og:title" content="Stackadoo">
-  <meta property="og:description" content="Build it tall. Watch it wobble.">
+  <meta property="og:site_name" content="Stackadoo">
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Stackadoo: a wobbly tower-stacking game">
+  <meta property="og:description" content="Build it tall. Watch it wobble.">
+  <meta property="og:url" content="https://mkhakpaki.github.io/stackadoo-site/">
+  <meta property="og:image" content="https://mkhakpaki.github.io/stackadoo-site/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Stackadoo app icon and logo on a sky-blue background, with the line Build it tall. Watch it wobble.">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stackadoo: a wobbly tower-stacking game">
+  <meta name="twitter:description" content="Build it tall. Watch it wobble.">
+  <meta name="twitter:image" content="https://mkhakpaki.github.io/stackadoo-site/og-image.png">
+  <meta name="twitter:image:alt" content="The Stackadoo app icon and logo on a sky-blue background, with the line Build it tall. Watch it wobble.">
   <link rel="preload" href="fonts/Baloo2-ExtraBold.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-home">
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header site-header--over">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="icon-192.png" alt="" width="40" height="40"><span>Stackadoo</span></a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="support.html">Help</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
 
   <!-- ============ HERO: day sky ============ -->
   <div class="zone zone--day hero">
     <span class="cloud cloud--a" aria-hidden="true"></span>
     <span class="cloud cloud--b" aria-hidden="true"></span>
-    <header class="site-header">
-      <div class="wrap">
-        <a class="brand" href="./"><img src="icon-192.png" alt="" width="40" height="40"><span>Stackadoo</span></a>
-        <nav aria-label="Main">
-          <ul class="nav">
-            <li><a href="support.html">Help</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="terms.html">Terms</a></li>
-          </ul>
-        </nav>
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1 class="logo logo--hero">Stackadoo<span class="sr-only">: a wobbly tower-stacking game</span></h1>
+        <p class="tagline">Build it tall. Watch it wobble.</p>
+        <p class="pitch">Stackadoo is a tower-stacking game for your phone. Place blocks that have faces, build as high as you can and keep the tower standing when the ground shakes. Climb past famous landmarks, through the clouds and all the way to space.</p>
+        <p><span class="pill pill--dot">Coming soon to Google Play and the App Store</span></p>
       </div>
-    </header>
-
-    <main id="main">
-      <div class="wrap">
-        <div class="hero-copy">
-          <h1 class="logo logo--hero">Stackadoo</h1>
-          <p class="tagline">Build it tall. Watch it wobble.</p>
-          <p class="pitch">Stackadoo is a tower-stacking game for your phone. Place blocks that have faces, build as high as you can and keep the tower standing when the ground shakes. Climb past famous landmarks, through the clouds and all the way to space.</p>
-          <p><span class="pill pill--yellow pill--dot">Coming soon to Google Play and the App Store</span></p>
-        </div>
-        <div class="hero-art">
-          <svg class="tower" viewBox="0 0 196 372" aria-hidden="true" focusable="false"><g transform="translate(10 10)"><rect x="44.0" y="308.0" width="44" height="44" fill="#2fa39b"/><rect x="44.0" y="310.6" width="44" height="11.0" fill="#eef1f5"/><rect x="44.0" y="308.0" width="44" height="2.6" fill="#17625d"/><rect x="44.0" y="349.4" width="44" height="2.6" fill="#17625d"/><rect x="44.0" y="308.0" width="2.6" height="44" fill="#17625d"/><rect x="51.9" y="324.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="324.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="88.0" y="308.0" width="44" height="44" fill="#2fa39b"/><rect x="88.0" y="308.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="88.0" y="349.4" width="44" height="2.6" fill="#17625d"/><g transform="translate(88.0 308.0) scale(1.833)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="14" r="2" fill="#1d1d2b"/><circle cx="17" cy="14" r="2" fill="#1d1d2b"/><path d="M9.5 20.5q2.5 1.8 5 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="132.0" y="308.0" width="44" height="44" fill="#2fa39b"/><rect x="132.0" y="310.6" width="44" height="11.0" fill="#eef1f5"/><rect x="132.0" y="308.0" width="44" height="2.6" fill="#17625d"/><rect x="132.0" y="349.4" width="44" height="2.6" fill="#17625d"/><rect x="173.4" y="308.0" width="2.6" height="44" fill="#17625d"/><rect x="139.9" y="324.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="158.4" y="324.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="88.0" y="264.0" width="44" height="44" fill="#2fa39b"/><rect x="88.0" y="266.6" width="44" height="11.0" fill="#eef1f5"/><rect x="88.0" y="264.0" width="44" height="2.6" fill="#17625d"/><rect x="88.0" y="264.0" width="2.6" height="44" fill="#17625d"/><rect x="129.4" y="264.0" width="2.6" height="44" fill="#17625d"/><rect x="95.9" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="114.4" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="0.0" y="264.0" width="44" height="44" fill="#f2b134"/><rect x="0.0" y="264.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="0.0" y="305.4" width="44" height="2.6" fill="#9a6a0c"/><rect x="0.0" y="264.0" width="2.6" height="44" fill="#9a6a0c"/><rect x="7.9" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="26.4" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="44.0" y="264.0" width="44" height="44" fill="#f2b134"/><rect x="44.0" y="264.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="44.0" y="305.4" width="44" height="2.6" fill="#9a6a0c"/><rect x="85.4" y="264.0" width="2.6" height="44" fill="#9a6a0c"/><rect x="51.9" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="0.0" y="220.0" width="44" height="44" fill="#f2b134"/><rect x="0.0" y="222.6" width="44" height="11.0" fill="#eef1f5"/><rect x="0.0" y="220.0" width="44" height="2.6" fill="#9a6a0c"/><rect x="0.0" y="220.0" width="2.6" height="44" fill="#9a6a0c"/><g transform="translate(0.0 220.0) scale(1.833)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="14" r="2" fill="#1d1d2b"/><circle cx="17" cy="14" r="2" fill="#1d1d2b"/><path d="M9.5 20.5q2.5 1.8 5 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="44.0" y="220.0" width="44" height="44" fill="#f2b134"/><rect x="44.0" y="222.6" width="44" height="11.0" fill="#eef1f5"/><rect x="44.0" y="220.0" width="44" height="2.6" fill="#9a6a0c"/><rect x="85.4" y="220.0" width="2.6" height="44" fill="#9a6a0c"/><rect x="51.9" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="88.0" y="220.0" width="44" height="44" fill="#4f74d1"/><rect x="88.0" y="220.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="88.0" y="261.4" width="44" height="2.6" fill="#2a4692"/><rect x="88.0" y="220.0" width="2.6" height="44" fill="#2a4692"/><rect x="95.9" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="114.4" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="132.0" y="220.0" width="44" height="44" fill="#4f74d1"/><rect x="132.0" y="222.6" width="44" height="11.0" fill="#eef1f5"/><rect x="132.0" y="220.0" width="44" height="2.6" fill="#2a4692"/><rect x="132.0" y="261.4" width="44" height="2.6" fill="#2a4692"/><rect x="173.4" y="220.0" width="2.6" height="44" fill="#2a4692"/><rect x="139.9" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="158.4" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="88.0" y="176.0" width="44" height="44" fill="#4f74d1"/><rect x="88.0" y="176.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="88.0" y="176.0" width="2.6" height="44" fill="#2a4692"/><rect x="129.4" y="176.0" width="2.6" height="44" fill="#2a4692"/><g transform="translate(88.0 176.0) scale(1.833)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="14" r="2" fill="#1d1d2b"/><circle cx="17" cy="14" r="2" fill="#1d1d2b"/><path d="M9.5 20.5q2.5 1.8 5 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="88.0" y="132.0" width="44" height="44" fill="#4f74d1"/><rect x="88.0" y="134.6" width="44" height="11.0" fill="#eef1f5"/><rect x="88.0" y="132.0" width="44" height="2.6" fill="#2a4692"/><rect x="88.0" y="132.0" width="2.6" height="44" fill="#2a4692"/><rect x="129.4" y="132.0" width="2.6" height="44" fill="#2a4692"/><rect x="95.9" y="148.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="114.4" y="148.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="0.0" y="176.0" width="44" height="44" fill="#8e63c7"/><rect x="0.0" y="178.6" width="44" height="11.0" fill="#eef1f5"/><rect x="0.0" y="176.0" width="44" height="2.6" fill="#55357f"/><rect x="0.0" y="217.4" width="44" height="2.6" fill="#55357f"/><rect x="0.0" y="176.0" width="2.6" height="44" fill="#55357f"/><rect x="7.9" y="192.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="26.4" y="192.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="44.0" y="176.0" width="44" height="44" fill="#8e63c7"/><rect x="44.0" y="176.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="44.0" y="217.4" width="44" height="2.6" fill="#55357f"/><rect x="85.4" y="176.0" width="2.6" height="44" fill="#55357f"/><rect x="51.9" y="192.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="192.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="44.0" y="132.0" width="44" height="44" fill="#8e63c7"/><rect x="44.0" y="132.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="44.0" y="132.0" width="2.6" height="44" fill="#55357f"/><rect x="85.4" y="132.0" width="2.6" height="44" fill="#55357f"/><g transform="translate(44.0 132.0) scale(1.833)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="14" r="2" fill="#1d1d2b"/><circle cx="17" cy="14" r="2" fill="#1d1d2b"/><path d="M9.5 20.5q2.5 1.8 5 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="44.0" y="88.0" width="44" height="44" fill="#8e63c7"/><rect x="44.0" y="90.6" width="44" height="11.0" fill="#eef1f5"/><rect x="44.0" y="88.0" width="44" height="2.6" fill="#55357f"/><rect x="44.0" y="88.0" width="2.6" height="44" fill="#55357f"/><rect x="85.4" y="88.0" width="2.6" height="44" fill="#55357f"/><rect x="51.9" y="104.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="104.6" width="9.7" height="18.5" fill="#d6eefc"/><g transform="rotate(6 110.0 44.0)"><rect x="44.0" y="44.0" width="44" height="44" fill="#58b368"/><rect x="44.0" y="46.6" width="44" height="11.0" fill="#eef1f5"/><rect x="44.0" y="44.0" width="44" height="2.6" fill="#2f7040"/><rect x="44.0" y="85.4" width="44" height="2.6" fill="#2f7040"/><rect x="44.0" y="44.0" width="2.6" height="44" fill="#2f7040"/><rect x="51.9" y="60.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="60.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="88.0" y="44.0" width="44" height="44" fill="#58b368"/><rect x="88.0" y="44.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="88.0" y="85.4" width="44" height="2.6" fill="#2f7040"/><rect x="129.4" y="44.0" width="2.6" height="44" fill="#2f7040"/><g transform="translate(88.0 44.0) scale(1.833)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="13" r="1.2" fill="#1d1d2b"/><circle cx="17" cy="13" r="1.2" fill="#1d1d2b"/><path d="M11 21a1 1.1 0 1 0 2 0a1 1.1 0 1 0-2 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="88.0" y="0.0" width="44" height="44" fill="#58b368"/><rect x="88.0" y="2.6" width="44" height="11.0" fill="#eef1f5"/><rect x="88.0" y="0.0" width="44" height="2.6" fill="#2f7040"/><rect x="88.0" y="0.0" width="2.6" height="44" fill="#2f7040"/><rect x="95.9" y="16.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="114.4" y="16.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="132.0" y="0.0" width="44" height="44" fill="#58b368"/><rect x="132.0" y="2.6" width="44" height="11.0" fill="#eef1f5"/><rect x="132.0" y="0.0" width="44" height="2.6" fill="#2f7040"/><rect x="132.0" y="41.4" width="44" height="2.6" fill="#2f7040"/><rect x="173.4" y="0.0" width="2.6" height="44" fill="#2f7040"/><rect x="139.9" y="16.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="158.4" y="16.6" width="9.7" height="18.5" fill="#d6eefc"/></g></g></svg>
-        </div>
+      <div class="hero-art">
+        <svg class="tower" viewBox="0 0 196 372" aria-hidden="true" focusable="false"><g transform="translate(10 10)"><rect x="44.0" y="308.0" width="44" height="44" fill="#2fa39b"/><rect x="44.0" y="310.6" width="44" height="11.0" fill="#eef1f5"/><rect x="44.0" y="308.0" width="44" height="2.6" fill="#17625d"/><rect x="44.0" y="349.4" width="44" height="2.6" fill="#17625d"/><rect x="44.0" y="308.0" width="2.6" height="44" fill="#17625d"/><rect x="51.9" y="324.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="324.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="88.0" y="308.0" width="44" height="44" fill="#2fa39b"/><rect x="88.0" y="308.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="88.0" y="349.4" width="44" height="2.6" fill="#17625d"/><g transform="translate(88.0 308.0) scale(1.833)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="14" r="2" fill="#1d1d2b"/><circle cx="17" cy="14" r="2" fill="#1d1d2b"/><path d="M9.5 20.5q2.5 1.8 5 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="132.0" y="308.0" width="44" height="44" fill="#2fa39b"/><rect x="132.0" y="310.6" width="44" height="11.0" fill="#eef1f5"/><rect x="132.0" y="308.0" width="44" height="2.6" fill="#17625d"/><rect x="132.0" y="349.4" width="44" height="2.6" fill="#17625d"/><rect x="173.4" y="308.0" width="2.6" height="44" fill="#17625d"/><rect x="139.9" y="324.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="158.4" y="324.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="88.0" y="264.0" width="44" height="44" fill="#2fa39b"/><rect x="88.0" y="266.6" width="44" height="11.0" fill="#eef1f5"/><rect x="88.0" y="264.0" width="44" height="2.6" fill="#17625d"/><rect x="88.0" y="264.0" width="2.6" height="44" fill="#17625d"/><rect x="129.4" y="264.0" width="2.6" height="44" fill="#17625d"/><rect x="95.9" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="114.4" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="0.0" y="264.0" width="44" height="44" fill="#f2b134"/><rect x="0.0" y="264.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="0.0" y="305.4" width="44" height="2.6" fill="#9a6a0c"/><rect x="0.0" y="264.0" width="2.6" height="44" fill="#9a6a0c"/><rect x="7.9" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="26.4" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="44.0" y="264.0" width="44" height="44" fill="#f2b134"/><rect x="44.0" y="264.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="44.0" y="305.4" width="44" height="2.6" fill="#9a6a0c"/><rect x="85.4" y="264.0" width="2.6" height="44" fill="#9a6a0c"/><rect x="51.9" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="280.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="0.0" y="220.0" width="44" height="44" fill="#f2b134"/><rect x="0.0" y="222.6" width="44" height="11.0" fill="#eef1f5"/><rect x="0.0" y="220.0" width="44" height="2.6" fill="#9a6a0c"/><rect x="0.0" y="220.0" width="2.6" height="44" fill="#9a6a0c"/><g transform="translate(0.0 220.0) scale(1.833)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="14" r="2" fill="#1d1d2b"/><circle cx="17" cy="14" r="2" fill="#1d1d2b"/><path d="M9.5 20.5q2.5 1.8 5 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="44.0" y="220.0" width="44" height="44" fill="#f2b134"/><rect x="44.0" y="222.6" width="44" height="11.0" fill="#eef1f5"/><rect x="44.0" y="220.0" width="44" height="2.6" fill="#9a6a0c"/><rect x="85.4" y="220.0" width="2.6" height="44" fill="#9a6a0c"/><rect x="51.9" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="88.0" y="220.0" width="44" height="44" fill="#4f74d1"/><rect x="88.0" y="220.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="88.0" y="261.4" width="44" height="2.6" fill="#2a4692"/><rect x="88.0" y="220.0" width="2.6" height="44" fill="#2a4692"/><rect x="95.9" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="114.4" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="132.0" y="220.0" width="44" height="44" fill="#4f74d1"/><rect x="132.0" y="222.6" width="44" height="11.0" fill="#eef1f5"/><rect x="132.0" y="220.0" width="44" height="2.6" fill="#2a4692"/><rect x="132.0" y="261.4" width="44" height="2.6" fill="#2a4692"/><rect x="173.4" y="220.0" width="2.6" height="44" fill="#2a4692"/><rect x="139.9" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="158.4" y="236.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="88.0" y="176.0" width="44" height="44" fill="#4f74d1"/><rect x="88.0" y="176.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="88.0" y="176.0" width="2.6" height="44" fill="#2a4692"/><rect x="129.4" y="176.0" width="2.6" height="44" fill="#2a4692"/><g transform="translate(88.0 176.0) scale(1.833)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="14" r="2" fill="#1d1d2b"/><circle cx="17" cy="14" r="2" fill="#1d1d2b"/><path d="M9.5 20.5q2.5 1.8 5 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="88.0" y="132.0" width="44" height="44" fill="#4f74d1"/><rect x="88.0" y="134.6" width="44" height="11.0" fill="#eef1f5"/><rect x="88.0" y="132.0" width="44" height="2.6" fill="#2a4692"/><rect x="88.0" y="132.0" width="2.6" height="44" fill="#2a4692"/><rect x="129.4" y="132.0" width="2.6" height="44" fill="#2a4692"/><rect x="95.9" y="148.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="114.4" y="148.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="0.0" y="176.0" width="44" height="44" fill="#8e63c7"/><rect x="0.0" y="178.6" width="44" height="11.0" fill="#eef1f5"/><rect x="0.0" y="176.0" width="44" height="2.6" fill="#55357f"/><rect x="0.0" y="217.4" width="44" height="2.6" fill="#55357f"/><rect x="0.0" y="176.0" width="2.6" height="44" fill="#55357f"/><rect x="7.9" y="192.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="26.4" y="192.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="44.0" y="176.0" width="44" height="44" fill="#8e63c7"/><rect x="44.0" y="176.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="44.0" y="217.4" width="44" height="2.6" fill="#55357f"/><rect x="85.4" y="176.0" width="2.6" height="44" fill="#55357f"/><rect x="51.9" y="192.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="192.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="44.0" y="132.0" width="44" height="44" fill="#8e63c7"/><rect x="44.0" y="132.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="44.0" y="132.0" width="2.6" height="44" fill="#55357f"/><rect x="85.4" y="132.0" width="2.6" height="44" fill="#55357f"/><g transform="translate(44.0 132.0) scale(1.833)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="14" r="2" fill="#1d1d2b"/><circle cx="17" cy="14" r="2" fill="#1d1d2b"/><path d="M9.5 20.5q2.5 1.8 5 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="44.0" y="88.0" width="44" height="44" fill="#8e63c7"/><rect x="44.0" y="90.6" width="44" height="11.0" fill="#eef1f5"/><rect x="44.0" y="88.0" width="44" height="2.6" fill="#55357f"/><rect x="44.0" y="88.0" width="2.6" height="44" fill="#55357f"/><rect x="85.4" y="88.0" width="2.6" height="44" fill="#55357f"/><rect x="51.9" y="104.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="104.6" width="9.7" height="18.5" fill="#d6eefc"/><g transform="rotate(6 110.0 44.0)"><rect x="44.0" y="44.0" width="44" height="44" fill="#58b368"/><rect x="44.0" y="46.6" width="44" height="11.0" fill="#eef1f5"/><rect x="44.0" y="44.0" width="44" height="2.6" fill="#2f7040"/><rect x="44.0" y="85.4" width="44" height="2.6" fill="#2f7040"/><rect x="44.0" y="44.0" width="2.6" height="44" fill="#2f7040"/><rect x="51.9" y="60.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="70.4" y="60.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="88.0" y="44.0" width="44" height="44" fill="#58b368"/><rect x="88.0" y="44.0" width="44" height="2.6" fill="#fff" opacity=".35"/><rect x="88.0" y="85.4" width="44" height="2.6" fill="#2f7040"/><rect x="129.4" y="44.0" width="2.6" height="44" fill="#2f7040"/><g transform="translate(88.0 44.0) scale(1.833)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="13" r="1.2" fill="#1d1d2b"/><circle cx="17" cy="13" r="1.2" fill="#1d1d2b"/><path d="M11 21a1 1.1 0 1 0 2 0a1 1.1 0 1 0-2 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="88.0" y="0.0" width="44" height="44" fill="#58b368"/><rect x="88.0" y="2.6" width="44" height="11.0" fill="#eef1f5"/><rect x="88.0" y="0.0" width="44" height="2.6" fill="#2f7040"/><rect x="88.0" y="0.0" width="2.6" height="44" fill="#2f7040"/><rect x="95.9" y="16.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="114.4" y="16.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="132.0" y="0.0" width="44" height="44" fill="#58b368"/><rect x="132.0" y="2.6" width="44" height="11.0" fill="#eef1f5"/><rect x="132.0" y="0.0" width="44" height="2.6" fill="#2f7040"/><rect x="132.0" y="41.4" width="44" height="2.6" fill="#2f7040"/><rect x="173.4" y="0.0" width="2.6" height="44" fill="#2f7040"/><rect x="139.9" y="16.6" width="9.7" height="18.5" fill="#d6eefc"/><rect x="158.4" y="16.6" width="9.7" height="18.5" fill="#d6eefc"/></g></g></svg>
       </div>
-    </main>
-    <div class="rooftop" aria-hidden="true"></div>
+    </div>
     <div class="city" aria-hidden="true"></div>
+    <div class="rooftop" aria-hidden="true"></div>
   </div>
 
   <!-- ============ HOW IT PLAYS: sky ============ -->
   <section class="zone zone--how" id="how" aria-labelledby="how-h">
     <div class="wrap">
+      <div class="peek" aria-hidden="true"><svg class="tower" viewBox="0 0 110 80" aria-hidden="true" focusable="false"><g transform="translate(10 10)"><g transform="rotate(-5 45.0 30.0)"><rect x="0.0" y="30.0" width="30" height="30" fill="#58b368"/><rect x="0.0" y="32.0" width="30" height="7.5" fill="#eef1f5"/><rect x="0.0" y="30.0" width="30" height="2.0" fill="#2f7040"/><rect x="0.0" y="58.0" width="30" height="2.0" fill="#2f7040"/><rect x="0.0" y="30.0" width="2.0" height="30" fill="#2f7040"/><rect x="5.4" y="41.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="18.0" y="41.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="30.0" y="30.0" width="30" height="30" fill="#58b368"/><rect x="30.0" y="30.0" width="30" height="2.0" fill="#fff" opacity=".35"/><rect x="30.0" y="58.0" width="30" height="2.0" fill="#2f7040"/><rect x="58.0" y="30.0" width="2.0" height="30" fill="#2f7040"/><g transform="translate(30.0 30.0) scale(1.250)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="14" r="2" fill="#1d1d2b"/><circle cx="17" cy="14" r="2" fill="#1d1d2b"/><path d="M9.5 20.5q2.5 1.8 5 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="30.0" y="0.0" width="30" height="30" fill="#58b368"/><rect x="30.0" y="2.0" width="30" height="7.5" fill="#eef1f5"/><rect x="30.0" y="0.0" width="30" height="2.0" fill="#2f7040"/><rect x="30.0" y="0.0" width="2.0" height="30" fill="#2f7040"/><rect x="35.4" y="11.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="48.0" y="11.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="60.0" y="0.0" width="30" height="30" fill="#58b368"/><rect x="60.0" y="2.0" width="30" height="7.5" fill="#eef1f5"/><rect x="60.0" y="0.0" width="30" height="2.0" fill="#2f7040"/><rect x="60.0" y="28.0" width="30" height="2.0" fill="#2f7040"/><rect x="88.0" y="0.0" width="2.0" height="30" fill="#2f7040"/><rect x="65.4" y="11.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="78.0" y="11.3" width="6.6" height="12.6" fill="#d6eefc"/></g></g></svg></div>
       <div class="section-head">
         <span class="kicker">How it plays</span>
         <h2 id="how-h">Pick, place, take your time</h2>
-        <p>There is no timer, so take your time.</p>
+        <p>There is no clock on your moves, so take your time.</p>
       </div>
       <div class="grid grid--3">
         <article class="card card--light step">
@@ -80,7 +91,7 @@
           <svg class="art" viewBox="0 0 84 60" aria-hidden="true" focusable="false"><g transform="translate(6 6)"><g transform="rotate(-6 36.0 24.0)"><rect x="24.0" y="24.0" width="24" height="24" fill="#f07c3e"/><rect x="24.0" y="24.0" width="24" height="2.0" fill="#fff" opacity=".35"/><rect x="24.0" y="46.0" width="24" height="2.0" fill="#9c4815"/><rect x="24.0" y="24.0" width="2.0" height="24" fill="#9c4815"/><rect x="28.3" y="33.0" width="5.3" height="10.1" fill="#d6eefc"/><rect x="38.4" y="33.0" width="5.3" height="10.1" fill="#d6eefc"/><rect x="48.0" y="24.0" width="24" height="24" fill="#f07c3e"/><rect x="48.0" y="26.0" width="24" height="6.0" fill="#eef1f5"/><rect x="48.0" y="24.0" width="24" height="2.0" fill="#9c4815"/><rect x="48.0" y="46.0" width="24" height="2.0" fill="#9c4815"/><rect x="70.0" y="24.0" width="2.0" height="24" fill="#9c4815"/><rect x="52.3" y="33.0" width="5.3" height="10.1" fill="#d6eefc"/><rect x="62.4" y="33.0" width="5.3" height="10.1" fill="#d6eefc"/><rect x="0.0" y="0.0" width="24" height="24" fill="#f07c3e"/><rect x="0.0" y="2.0" width="24" height="6.0" fill="#eef1f5"/><rect x="0.0" y="0.0" width="24" height="2.0" fill="#9c4815"/><rect x="0.0" y="22.0" width="24" height="2.0" fill="#9c4815"/><rect x="0.0" y="0.0" width="2.0" height="24" fill="#9c4815"/><rect x="4.3" y="9.0" width="5.3" height="10.1" fill="#d6eefc"/><rect x="14.4" y="9.0" width="5.3" height="10.1" fill="#d6eefc"/><rect x="24.0" y="0.0" width="24" height="24" fill="#f07c3e"/><rect x="24.0" y="2.0" width="24" height="6.0" fill="#eef1f5"/><rect x="24.0" y="0.0" width="24" height="2.0" fill="#9c4815"/><rect x="46.0" y="0.0" width="2.0" height="24" fill="#9c4815"/><g transform="translate(24.0 0.0) scale(1.000)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="13" r="1.2" fill="#1d1d2b"/><circle cx="17" cy="13" r="1.2" fill="#1d1d2b"/><path d="M11 21a1 1.1 0 1 0 2 0a1 1.1 0 1 0-2 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g></g></g></svg>
           <span class="step-num">Step 3</span>
           <h3>Keep it standing</h3>
-          <p>If a block falls off, you lose a heart. Lose all three and the run ends. Your height only counts once the blocks stop wobbling.</p>
+          <p>If a block falls off, you lose a heart. Lose them all and the run is over, unless you watch an ad to revive. You get one revive per run. Your height only counts once the blocks stop wobbling.</p>
         </article>
       </div>
     </div>
@@ -92,54 +103,58 @@
     <span class="cloud cloud--b" aria-hidden="true"></span>
     <span class="cloud cloud--c" aria-hidden="true"></span>
     <div class="wrap">
+      <div class="peek" aria-hidden="true"><svg class="tower" viewBox="0 0 80 110" aria-hidden="true" focusable="false"><g transform="translate(10 10)"><g transform="rotate(6 30.0 45.0)"><rect x="0.0" y="60.0" width="30" height="30" fill="#4f74d1"/><rect x="0.0" y="60.0" width="30" height="2.0" fill="#fff" opacity=".35"/><rect x="0.0" y="88.0" width="30" height="2.0" fill="#2a4692"/><rect x="0.0" y="60.0" width="2.0" height="30" fill="#2a4692"/><rect x="5.4" y="71.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="18.0" y="71.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="30.0" y="60.0" width="30" height="30" fill="#4f74d1"/><rect x="30.0" y="62.0" width="30" height="7.5" fill="#eef1f5"/><rect x="30.0" y="60.0" width="30" height="2.0" fill="#2a4692"/><rect x="30.0" y="88.0" width="30" height="2.0" fill="#2a4692"/><rect x="58.0" y="60.0" width="2.0" height="30" fill="#2a4692"/><rect x="35.4" y="71.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="48.0" y="71.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="0.0" y="30.0" width="30" height="30" fill="#4f74d1"/><rect x="0.0" y="30.0" width="30" height="2.0" fill="#fff" opacity=".35"/><rect x="0.0" y="30.0" width="2.0" height="30" fill="#2a4692"/><rect x="28.0" y="30.0" width="2.0" height="30" fill="#2a4692"/><g transform="translate(0.0 30.0) scale(1.250)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="13" r="1.2" fill="#1d1d2b"/><circle cx="17" cy="13" r="1.2" fill="#1d1d2b"/><path d="M11 21a1 1.1 0 1 0 2 0a1 1.1 0 1 0-2 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="0.0" y="0.0" width="30" height="30" fill="#4f74d1"/><rect x="0.0" y="2.0" width="30" height="7.5" fill="#eef1f5"/><rect x="0.0" y="0.0" width="30" height="2.0" fill="#2a4692"/><rect x="0.0" y="0.0" width="2.0" height="30" fill="#2a4692"/><rect x="28.0" y="0.0" width="2.0" height="30" fill="#2a4692"/><rect x="5.4" y="11.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="18.0" y="11.3" width="6.6" height="12.6" fill="#d6eefc"/></g></g></svg></div>
       <div class="section-head">
         <span class="kicker">Tremors and gusts</span>
         <h2 id="climb-h">The world pushes back</h2>
       </div>
       <div class="grid grid--3">
-        <article class="card card--light">
+        <article class="card">
+          <span class="disc disc--red disc--sm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12l3-6 4 12 4-12 4 12 3-6"/></svg></span>
           <h3>Tremors</h3>
-          <p>In normal runs the ground shakes now and then. A red card and a 3-second warning tell you it is coming, and the tray waits while you get ready. Tap Freeze, then your tower, to keep every block in place. Or hold on and see what holds.</p>
+          <p>In normal runs the ground shakes now and then. A red card warns you first, and the tray pauses until the shaking stops. Tap Freeze, then your tower, to keep every block in place. Or hold on and see what holds.</p>
         </article>
-        <article class="card card--light">
+        <article class="card">
+          <span class="disc disc--freeze disc--sm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12.8 19.6A2 2 0 1 0 14 16H2M17.5 8a2.5 2.5 0 1 1 2 4H2M9.8 4.4A2 2 0 1 1 11 8H2"/></svg></span>
           <h3>Gusts</h3>
           <p>In the Daily tower the wind picks up instead. A card says which side the gust comes from.</p>
         </article>
-        <article class="card card--light">
+        <article class="card">
+          <span class="disc disc--purple disc--sm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></span>
           <h3>Low gravity</h3>
           <p>Space has its own surprise. Blocks float and settle slowly.</p>
         </article>
       </div>
 
-      <div class="section-head" style="margin-block: 56px 28px" id="landmarks">
+      <div class="section-head section-head--gap" id="landmarks">
         <span class="kicker">Landmarks and zones</span>
         <h2 id="lm-h">Measured against real landmarks</h2>
-        <p>Pass one and you get a toast, some coins and, the first time ever, a free power-up.</p>
+        <p>Pass one and you get a cheer on screen, some coins and, the first time ever, a free power-up.</p>
       </div>
       <div class="grid grid--2">
         <article class="card card--light">
           <h3>Six landmarks</h3>
           <ul class="chips" aria-label="Landmarks">
-            <li class="chip"><i style="background:#f2b134"></i>Statue of Liberty</li>
-            <li class="chip"><i style="background:#d9534f"></i>Big Ben</li>
-            <li class="chip"><i style="background:#2fa39b"></i>Great Pyramid</li>
-            <li class="chip"><i style="background:#4f74d1"></i>Eiffel Tower</li>
-            <li class="chip"><i style="background:#8e63c7"></i>Empire State Building</li>
-            <li class="chip"><i style="background:#58b368"></i>Burj Khalifa</li>
+            <li class="chip"><i class="sw-liberty"></i>Statue of Liberty</li>
+            <li class="chip"><i class="sw-bigben"></i>Big Ben</li>
+            <li class="chip"><i class="sw-pyramid"></i>Great Pyramid</li>
+            <li class="chip"><i class="sw-eiffel"></i>Eiffel Tower</li>
+            <li class="chip"><i class="sw-empire"></i>Empire State Building</li>
+            <li class="chip"><i class="sw-burj"></i>Burj Khalifa</li>
           </ul>
         </article>
         <article class="card card--light">
           <h3>Four zones</h3>
-          <p style="margin-block-end:0">The sky changes as you climb.</p>
+          <p>The sky changes as you climb.</p>
           <ul class="chips" aria-label="Altitude zones">
-            <li class="chip"><i style="background:linear-gradient(#6fbfff,#d4ecff)"></i>Street level</li>
-            <li class="chip"><i style="background:linear-gradient(#fff,#c3d8f6)"></i>Cloud level</li>
-            <li class="chip"><i style="background:linear-gradient(#4a4a9a,#232862)"></i>Night sky</li>
-            <li class="chip"><i style="background:linear-gradient(#14173a,#0a0c24)"></i>Space</li>
+            <li class="chip"><i class="sw-z1"></i>Street level</li>
+            <li class="chip"><i class="sw-z2"></i>Cloud level</li>
+            <li class="chip"><i class="sw-z3"></i>Night sky</li>
+            <li class="chip"><i class="sw-z4"></i>Space</li>
           </ul>
         </article>
       </div>
-      <p style="margin-block:20px 0">Milestone lines on the way pay coins. When a run ends you get a tower postcard to share, with the landmark you beat (&ldquo;Taller than Big Ben!&rdquo;).</p>
+      <p class="note">Milestone lines on the way pay coins. When a run ends you can share a picture of your tower, with the landmark you beat (&ldquo;Taller than Big Ben!&rdquo;).</p>
     </div>
   </section>
 
@@ -150,12 +165,12 @@
     <div class="wrap">
       <div class="card card--promo daily">
         <div>
-          <span class="kicker" style="color:#fff">The Daily tower</span>
+          <span class="kicker kicker--white">The Daily tower</span>
           <h2 id="daily-h">One new tower a day</h2>
           <p>Everyone gets the same blocks. You have a goal height and a limit on blocks, and one free try a day. If you miss the goal you can try once more after watching an ad. Reach the goal and you earn bonus coins.</p>
-          <p>Play on consecutive days to build a streak, with a reward for every day of a 7-day streak. Miss a day after a streak and you can save it by watching an ad.</p>
+          <p>Play on consecutive days to build a streak, with a reward for every day of a 7-day streak. Miss a day and the streak starts over, though after a good streak the game may offer to save it for an ad.</p>
         </div>
-        <span class="disc" style="--d1:#ffffff;--d2:#e3d6ff;color:#6a3fd6;inline-size:88px;block-size:88px" aria-hidden="true"><svg viewBox="0 0 24 24" style="inline-size:44px;block-size:44px"><path d="M8 2v4M16 2v4M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2zM3 10h18"/></svg></span>
+        <span class="disc disc--daily" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2zM3 10h18"/></svg></span>
       </div>
     </div>
   </section>
@@ -163,12 +178,13 @@
   <!-- ============ POWER-UPS: space ============ -->
   <section class="zone zone--space" id="power-ups" aria-labelledby="pu-h">
     <div class="wrap">
+      <div class="peek" aria-hidden="true"><svg class="tower" viewBox="0 0 80 80" aria-hidden="true" focusable="false"><g transform="translate(10 10)"><g transform="rotate(4 30.0 30.0)"><rect x="0.0" y="30.0" width="30" height="30" fill="#f2b134"/><rect x="0.0" y="30.0" width="30" height="2.0" fill="#fff" opacity=".35"/><rect x="0.0" y="58.0" width="30" height="2.0" fill="#9a6a0c"/><rect x="0.0" y="30.0" width="2.0" height="30" fill="#9a6a0c"/><rect x="5.4" y="41.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="18.0" y="41.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="30.0" y="30.0" width="30" height="30" fill="#f2b134"/><rect x="30.0" y="30.0" width="30" height="2.0" fill="#fff" opacity=".35"/><rect x="30.0" y="58.0" width="30" height="2.0" fill="#9a6a0c"/><rect x="58.0" y="30.0" width="2.0" height="30" fill="#9a6a0c"/><rect x="35.4" y="41.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="48.0" y="41.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="0.0" y="0.0" width="30" height="30" fill="#f2b134"/><rect x="0.0" y="2.0" width="30" height="7.5" fill="#eef1f5"/><rect x="0.0" y="0.0" width="30" height="2.0" fill="#9a6a0c"/><rect x="0.0" y="0.0" width="2.0" height="30" fill="#9a6a0c"/><g transform="translate(0.0 0.0) scale(1.250)"><rect x="3.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><rect x="13.5" y="9" width="7" height="9.5" rx="1.2" fill="#fff" stroke="#1d1d2b" stroke-width=".9"/><circle cx="7" cy="14" r="2" fill="#1d1d2b"/><circle cx="17" cy="14" r="2" fill="#1d1d2b"/><path d="M9.5 20.5q2.5 1.8 5 0" fill="none" stroke="#1d1d2b" stroke-width="1.4" stroke-linecap="round"/></g><rect x="30.0" y="0.0" width="30" height="30" fill="#f2b134"/><rect x="30.0" y="2.0" width="30" height="7.5" fill="#eef1f5"/><rect x="30.0" y="0.0" width="30" height="2.0" fill="#9a6a0c"/><rect x="58.0" y="0.0" width="2.0" height="30" fill="#9a6a0c"/><rect x="35.4" y="11.3" width="6.6" height="12.6" fill="#d6eefc"/><rect x="48.0" y="11.3" width="6.6" height="12.6" fill="#d6eefc"/></g></g></svg></div>
       <div class="section-head">
         <span class="kicker">Power-ups</span>
         <h2 id="pu-h">Six helpers to get you out of trouble</h2>
-        <p>The Shop and daily gifts add more.</p>
+        <p>The Shop, the Free gift, landmarks and ads add more.</p>
       </div>
-      <ul class="grid grid--powers" style="list-style:none;margin:0;padding:0">
+      <ul class="grid grid--powers list-reset">
         <li class="card power"><span class="disc disc--undo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 14 4 9l5-5M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11"/></svg></span><div><h3>Undo</h3><p>Takes back your last placement. The block goes back to your tray and the tower snaps back, even a lost life.</p></div></li>
         <li class="card power"><span class="disc disc--glue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></span><div><h3>Glue</h3><p>Your next block sticks to whatever it touches when you place it. It can&rsquo;t slide off or tip over.</p></div></li>
         <li class="card power"><span class="disc disc--freeze" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12L22 12M12 2L12 22M20 16l-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"/></svg></span><div><h3>Freeze</h3><p>Turns the tower you have now to ice, so nothing in it can slide or fall. Blocks you add on top still move.</p></div></li>
@@ -176,29 +192,29 @@
         <li class="card power"><span class="disc disc--bird" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0M9 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/></svg></span><div><h3>Bird&rsquo;s-eye</h3><p>Zooms out to your whole tower. Safe gaps that were out of view glow, so you can place your block in a hole deep inside.</p></div></li>
         <li class="card power"><span class="disc disc--reroll" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2zM17.92 14l3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6M6 18h.01M10 14h.01M15 6h.01M18 9h.01"/></svg></span><div><h3>Reroll</h3><p>Swaps all 3 blocks in your tray for new ones when you&rsquo;re stuck with shapes that don&rsquo;t fit.</p></div></li>
       </ul>
-      <p style="margin-block:20px 0">Each has a limit per run, so every player faces the same rules.</p>
+      <p class="note">Each has a limit per run, so every player faces the same rules.</p>
     </div>
   </section>
 
   <!-- ============ FREE TO PLAY ============ -->
-  <section class="zone zone--space" id="free" aria-labelledby="free-h" style="padding-block-start:0">
+  <section class="zone zone--space zone--flush" id="free" aria-labelledby="free-h">
     <div class="wrap">
       <div class="section-head">
         <span class="kicker">Free to play</span>
-        <h2 id="free-h">Free, with ads kept in check</h2>
+        <h2 id="free-h">Free to play, with optional ads and purchases</h2>
         <p>Stackadoo is free. You can earn coins and power-ups just by playing, and you can buy more if you want to.</p>
       </div>
       <div class="grid grid--3">
         <article class="card">
           <h3>Ads, kept in check</h3>
           <ul>
-            <li>Video ads are always your choice. Watch one to get a power-up, to revive once in a run, to double your coins or for a second free gift.</li>
+            <li>Watching a video ad is always your choice. Watch one to get a power-up, to revive once in a run, to double your coins or to open a second gift.</li>
             <li>Between runs you may see a full-screen ad when you restart, never in the middle of a run. A banner sits at the bottom of most screens.</li>
           </ul>
         </article>
         <article class="card">
           <h3>No Ads Pass</h3>
-          <p>Pay once, keep forever. Removes banners and pop-up ads. Bonus video ads stay.</p>
+          <p>One-time purchase. Removes banners and pop-up ads. Bonus video ads stay.</p>
         </article>
         <article class="card">
           <h3>Coins and packs</h3>
@@ -209,16 +225,16 @@
   </section>
 
   <!-- ============ FAIR PLAY AND PRIVACY IN BRIEF ============ -->
-  <section class="zone zone--space band" id="fair-play" aria-labelledby="fair-h" style="padding-block-start:0">
+  <section class="zone zone--space zone--flush band" id="fair-play" aria-labelledby="fair-h">
     <div class="wrap">
       <div class="card">
-        <h2 id="fair-h" style="font-size:1.6rem">Fair play and privacy in brief</h2>
+        <h2 id="fair-h" class="h2-sm">Fair play and privacy in brief</h2>
         <ul>
-          <li>No timer. Take as long as you like to place a block.</li>
-          <li>Video ads are always optional. The No Ads Pass doesn&rsquo;t remove them because they are never forced.</li>
+          <li>No clock on your moves. Take as long as you like to place a block.</li>
+          <li>Video ads are always optional. The No Ads Pass leaves them in, so you can still choose to watch one for a power-up, a revive or extra coins.</li>
           <li>Power-up limits per run are the same however you got the power-up, whether you earned it, watched for it or bought it.</li>
           <li>Power-ups are not part of the No Ads Pass. You never have to buy them: you can earn or watch for them.</li>
-          <li>A fair mix of blocks: every shape comes round again before any repeats.</li>
+          <li>A fair mix of blocks: they come from a shuffled bag, so every shape keeps coming round.</li>
         </ul>
         <p>For how the game handles your information, and the rules of play, read the full pages.</p>
         <div class="actions">
@@ -229,6 +245,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ============ FOOTER ============ -->
   <footer class="zone zone--footer">
     <div class="wrap">
@@ -238,9 +256,9 @@
         <li><a href="terms.html">Terms</a></li>
         <li><a href="delete-data.html">Delete your data</a></li>
       </ul>
-      <p class="footer-small">In English and Persian.</p>
-      <p class="footer-small">An independent game by [[DEVELOPER_NAME]]</p>
-      <p class="footer-small">&copy; 2026 [[DEVELOPER_NAME]]</p>
+      <p class="footer-small">The game speaks English and Persian.</p>
+      <p class="footer-small">An independent game by Mohammad Khakpaki.</p>
+      <p class="footer-small">&copy; 2026 Mohammad Khakpaki</p>
       <p class="footer-small">Google Play and the App Store are trademarks of their respective owners.</p>
     </div>
   </footer>

@@ -65,9 +65,10 @@
         <ul>
           <li>Stackadoo has <strong>no accounts</strong> and <strong>no server of its own</strong>. Your progress, coins and settings stay on your phone.</li>
           <li>The game is free and supported by <strong>ads</strong> (Google AdMob). Where the law requires it, Google's consent form asks you before ads are requested.</li>
-          <li>Google's <strong>Firebase</strong> gives me crash reports, usage statistics and remote settings. Google Signals may link usage to your Google account if your account settings and your consent allow it. <strong>Adapty</strong> handles purchase records. Both are explained below.</li>
+          <li>Google's <strong>Firebase</strong> gives me crash reports, usage statistics and remote settings. Google Signals may link usage to your Google account if your Google account settings allow it and, where Google's consent form or a US opt-out applies, your choice there allows it. <strong>Adapty</strong> handles purchase records. Both are explained below.</li>
           <li>I do not sell your data for money. Ads served by Google may count as "selling" or "sharing" for advertising under some US state laws. You can opt out (see <a href="#rights">Your rights</a>).</li>
           <li>The game never asks for your name, e-mail or contacts.</li>
+          <li>You can object to crash reports, remote settings and the Shop note: see <a href="#objection">Your right to object</a>.</li>
         </ul>
       </div>
 
@@ -85,6 +86,7 @@
             <li><a href="#email">When you e-mail me</a></li>
             <li><a href="#permissions">Permissions</a></li>
             <li><a href="#never">What I never do</a></li>
+            <li><a href="#security">How your data is protected</a></li>
             <li><a href="#bases">Why I am allowed to use your data (GDPR)</a></li>
             <li><a href="#transfers">Transfers outside your country</a></li>
             <li><a href="#retention">How long data is kept</a></li>
@@ -103,7 +105,7 @@
         <h2 id="controller">Who is responsible</h2>
         <p>Stackadoo is made and published by <strong>Mohammad Khakpaki</strong>, an independent developer. This is not a company. For the data described in this policy, I am the one responsible for it (the "controller" in data-protection law) and the person you can write to:</p>
         <p><strong>E-mail:</strong> <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a></p>
-        <p>Google and Adapty also handle some of the data below. Each has its own privacy policy, linked in the relevant section.</p>
+        <p>Google and Adapty also handle some of the data below, and for ads, other advertising companies working through Google may too (see <a href="#ads">Advertising</a>). Each has its own privacy policy, linked in the relevant section.</p>
       </section>
 
       <section aria-labelledby="on-device">
@@ -144,15 +146,16 @@
         <h3>Google Signals and data sharing</h3>
         <p>I have turned on <strong>Google Signals</strong> in Google Analytics. If you are signed in to a Google account on your device and have ad personalisation turned on in that account, Google can connect the game's analytics data with your Google account. This turns on Google Analytics' advertising features: cross-device reporting, demographics and interests reporting (aggregated age ranges and interests), and the building of ad audiences (remarketing) for Google's advertising. To provide them, Google Analytics uses the game's own app-instance identifier together with Google's advertising identifiers, such as your device's advertising ID where allowed.</p>
         <p>I only see aggregated reports, never your Google account.</p>
-        <p>I have also turned on Google Analytics' <strong>data sharing</strong> settings. These let Google use the game's analytics data to improve its own products and services, for modelling and benchmarking, for technical support, and for the other purposes listed in those settings.</p>
-        <p>Both follow the consent rules above: where your answer in Google's consent form, or your US opt-out, keeps the advertising settings denied, analytics data is not used for ad personalisation. Google says it applies these consent settings to its advertising features; I rely on Google for that. After a US opt-out, usage statistics continue, and Google Analytics data sharing is not switched off by the opt-out.</p>
+        <p>I have also turned on Google Analytics' <strong>data sharing</strong> settings. These let Google use the game's analytics data to improve its own products and services, for modelling and benchmarking, for technical support, and for the other purposes listed in those settings. For data used under these settings, Google acts as a separate controller under its own terms, not only on my behalf.</p>
+        <p>Both follow the consent rules above: where your answer in Google's consent form, or your US opt-out, keeps the advertising settings denied, analytics data is not used for ad personalisation. Google says it applies these consent settings to its advertising features; I rely on Google for that. After a US opt-out, usage statistics continue, and Google Analytics data sharing is not switched off by the opt-out. The same applies to the limited pings described above after you decline in the EEA or UK: they can be part of the analytics data that the data-sharing settings cover.</p>
         <p><strong>How to opt out of these advertising features:</strong> turn off ad personalisation in Google's Ads Settings for your account at <a href="https://myadcenter.google.com" rel="external">myadcenter.google.com</a>; reset or delete your advertising ID in your phone's ad settings (Android: Settings &#9656; Privacy &#9656; Ads); change your answer in <strong>Settings &#9656; Privacy choices</strong> where it is shown; or on iPhone turn off the game's permission to track you. See <a href="https://policies.google.com/technologies/partner-sites" rel="external">how Google uses data from apps that use its services</a>.</p>
 
         <h3>Crashlytics</h3>
-        <p>When the game crashes, Crashlytics sends a report with the stack trace (what the code was doing), your device model and OS version, app version, and the Crashlytics and Firebase installation identifiers. I use it to find and fix bugs. <strong>Crash reporting is always on and does not depend on your consent choice.</strong> Crashlytics keeps crash data for 90 days.</p>
+        <p>When the game crashes, Crashlytics sends a report with the stack trace (what the code was doing), your device model and OS version, app version, and the Crashlytics and Firebase installation identifiers.</p>
+        <p>Crashlytics can also send a small record each time the game starts (with the installation identifier, app version and device details), so I can see how many sessions run without a crash. I use it to find and fix bugs. <strong>Crash reporting is always on and does not depend on your consent choice.</strong> Crashlytics keeps crash data for 90 days.</p>
 
         <h3>Remote Config</h3>
-        <p>Remote Config lets me adjust game settings, for example how often ads appear, without releasing an update. At launch the game asks Firebase for the latest settings. That request carries the Firebase installation identifier. The game sends no values of its own. This is also always on and does not depend on your consent choice.</p>
+        <p>Remote Config lets me adjust game settings, for example how often ads appear, without releasing an update. At launch the game asks Firebase for the latest settings. That request carries the Firebase installation identifier and basic details Firebase uses to pick the right settings: your country, language, time zone and OS version, and the app's identity. The game adds no values of its own. This is also always on and does not depend on your consent choice.</p>
 
         <p>The Firebase installation identifier is a random per-install number used by Crashlytics and Remote Config. The game does not show it to you.</p>
       </section>
@@ -165,8 +168,9 @@
           <li><strong>Full-screen ads</strong> at a few natural breaks, such as when you play again or restart.</li>
           <li><strong>Rewarded videos</strong>, which are <strong>always optional</strong>. You choose to watch one in return for something in the game, such as a revive or extra coins.</li>
         </ul>
-        <p>To show and measure ads, Google receives standard ad data: your advertising ID where allowed, IP address, device and app details, and how you interact with ads. Google's <a href="https://policies.google.com/technologies/partner-sites" rel="external">page on how it uses data from apps that use its services</a> explains more. The game does not pass any information about you to advertisers.</p>
-        <p><strong>Crash logs and diagnostics from the ads software.</strong> The game starts Google's ads software only after Google's consent tool says the game may request ads. Where consent is required, it is not started before you have answered. Once it is running, it also sends Google crash and diagnostic reports about errors in the game: the error's type, message and stack trace, the device model, operating system, the Unity version, the game's app ID, a random session ID, your country and your network type. It collects the errors the game hits and sends them to Google in batches, about every two minutes while you play, or sooner if several build up. This happens wherever the game is allowed to request ads, including in US states after you opt out of the sale or sharing of your data, because these reports are error diagnostics, not advertising data.</p>
+        <p>To show and measure ads, Google's ads software collects standard ad data: your advertising ID and other device identifiers where allowed, your IP address (which can show your approximate location), device and app details, app launches and taps, performance data such as how quickly the game starts, and the ads you see and how you interact with them. Google receives this data.</p>
+        <p><strong>Other advertising companies that buy, show or measure ads through Google</strong>, such as ad networks and ad-measurement companies, may also receive it, or collect it themselves when they serve an ad in the game. Where Google's European consent form is shown, it lists these companies and lets you choose. Google's <a href="https://policies.google.com/technologies/partner-sites" rel="external">page on how it uses data from apps that use its services</a> explains more. The game itself adds nothing about you, such as your progress or purchases, to ad requests.</p>
+        <p><strong>Crash logs and diagnostics from the ads software.</strong> The game starts Google's ads software only after Google's consent tool says the game may request ads. Where consent is required, it is not started before you have answered. Once it is running, it also sends Google crash and diagnostic reports about errors in the game: the error's type, message and stack trace, the device model, operating system, the Unity version, the game's app ID, a random session ID, your country and your network type. It collects the errors the game hits and sends them to Google in batches; on Android this is about every two minutes while you play, or sooner if several build up. This happens wherever the game is allowed to request ads, including in US states after you opt out of the sale or sharing of your data, because these reports are error diagnostics, not advertising data.</p>
         <p>If you withdraw your consent in <strong>Settings &#9656; Privacy choices</strong> and Google's tool then no longer allows ads, the ads software is not started from the next time you open the game; it cannot be stopped in the middle of a session. If Google's tool allows ads even after you decline (for example limited ads), the ads software and its error reports may still run. Google handles these reports under its own policies (link above). This is separate from the game's own crash reports through Firebase Crashlytics.</p>
 
         <h3>Google's consent form</h3>
@@ -204,7 +208,7 @@
 
       <section aria-labelledby="email">
         <h2 id="email">When you e-mail me</h2>
-        <p>I receive your e-mail address, what you write and anything you attach, such as device details or an order number. I use it only to answer you, fix problems and handle privacy requests (contract, legitimate interests, and legal obligation for rights requests). I keep it for 12 months after the matter is closed. Where applicable, my e-mail provider processes it for me.</p>
+        <p>I receive your e-mail address, what you write and anything you attach, such as device details or an order number. I use it only to answer you, fix problems and handle privacy requests (contract, legitimate interests, and legal obligation for rights requests). I keep it for 12 months after the matter is closed. My e-mail is provided by Google (Gmail), which stores it on its systems under its own terms and privacy policy.</p>
       </section>
 
       <section aria-labelledby="permissions">
@@ -236,6 +240,17 @@
         <p>Because ads, analytics and purchases involve Google and Adapty, I cannot honestly say "no personal data is collected". Identifiers, IP addresses, crash data and purchase history do reach them, as described above. The game never asks for your name, e-mail or contacts. If you write to me, I see your e-mail address (see <a href="#email">When you e-mail me</a>).</p>
       </section>
 
+      <section aria-labelledby="security">
+        <h2 id="security">How your data is protected</h2>
+        <p>The game has no server of its own. Apart from your phone (and any backup your phone makes) and any e-mail you send me, your data is held only by Google, Adapty, the advertising companies working through Google, and the app stores.</p>
+        <ul>
+          <li><strong>On your phone:</strong> the game keeps its data in its own app storage, which your phone's operating system keeps separate from other apps. The game does not add its own encryption to this file.</li>
+          <li><strong>On the way:</strong> Google (Firebase and AdMob) and Adapty state that the data their software sends is encrypted in transit (HTTPS/TLS).</li>
+          <li><strong>At Google and Adapty:</strong> they store and protect the data under their own security measures and terms, linked above. Adapty acts under a data-processing agreement with me.</li>
+          <li><strong>If something goes wrong:</strong> if I learn of a security problem affecting your data, I will act on it, and tell the people affected and the authorities where the law requires.</li>
+        </ul>
+      </section>
+
       <section aria-labelledby="bases">
         <h2 id="bases">Why I am allowed to use your data (GDPR)</h2>
         <p>If you are in the EEA or UK, the law requires a legal basis for each use of your data. Mine are:</p>
@@ -245,14 +260,14 @@
           <li><strong>Legitimate interests (Art. 6(1)(f))</strong>: (a) crash reports: my interest in finding and fixing crashes so the game stays stable and secure; (b) remote settings: my interest in adjusting game and ad settings, such as how often ads appear, without an update, so the game can stay free and balanced; (c) the note Adapty gets when you open the Shop, and the limited, aggregate pings Google's analytics can still receive after you decline: my interest in knowing, in aggregate, how the game and its Shop are used. The data is small and technical, includes no names, and I do not build profiles from it. You can object (see <a href="#rights">Your rights</a>).</li>
           <li><strong>Outside the EEA and UK</strong>, where no consent form is shown because the law there does not require one, analytics, Google Signals and ad settings are on. I rely on my legitimate interest in understanding how the game is used and in showing the ads that keep it free. You can limit this by resetting your advertising ID, turning off tracking on iPhone, or writing to me.</li>
         </ul>
-        <p>Google decides for itself how it uses ad data and the error reports from its ads software, under its own policies and legal bases.</p>
+        <p>Google, and the advertising companies that work through it, decide for themselves how they use ad data, and Google decides how it uses the error reports from its ads software, under their own policies and legal bases.</p>
         <p>You do not have to give me any data to play. Crash reports, remote settings and purchase handling are sent automatically; the only way to stop them is not to play.</p>
       </section>
 
       <section aria-labelledby="transfers">
         <h2 id="transfers">Transfers outside your country</h2>
-        <p>Google and Adapty process data on their own systems, which may be in countries other than yours, including the United States. Where the GDPR or UK GDPR applies, such transfers rely on a safeguard such as an adequacy decision (for example the EU-US Data Privacy Framework, for certified companies), the EU standard contractual clauses or the UK addendum. You can ask me how to get details of the safeguards used by e-mailing <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a>.</p>
-        <p>Adapty processes data under a data-processing agreement with me. Google's services are covered by Google's own terms for Firebase and AdMob. Each is required to protect your data in line with its published terms. See their policies: <a href="https://firebase.google.com/support/privacy" rel="external">Firebase</a>, <a href="https://policies.google.com/technologies/partner-sites" rel="external">Google advertising</a> and <a href="https://adapty.io/end-users-privacy/" rel="external">Adapty</a>.</p>
+        <p>Google and Adapty process data on their own systems and those of their sub-processors, in the United States and in other countries where they operate. Where the GDPR or UK GDPR applies, such transfers rely on a safeguard such as an adequacy decision (for example the EU-US Data Privacy Framework, for certified companies), the EU standard contractual clauses or the UK addendum. You can ask me how to get details of the safeguards used by e-mailing <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a>.</p>
+        <p>Adapty processes data for me under a data-processing agreement. For Firebase, Google generally processes data on my behalf under its data-processing terms; for ads, Google Signals and Google Analytics data sharing, Google uses data under its own terms. Adapty, and Google for its services, provide the same or equal protection of your data as this policy describes and as Apple's and Google Play's rules require. Advertising companies working through Google are bound by Google's policies and, where Google's consent form is shown, by your choices there. See their policies: <a href="https://firebase.google.com/support/privacy" rel="external">Firebase</a>, <a href="https://policies.google.com/technologies/partner-sites" rel="external">Google advertising</a> and <a href="https://adapty.io/end-users-privacy/" rel="external">Adapty</a>.</p>
       </section>
 
       <section aria-labelledby="retention">
@@ -261,9 +276,9 @@
           <li><strong>On your phone:</strong> until you delete the game or clear its data.</li>
           <li><strong>Remote settings on your phone:</strong> Firebase keeps the last settings it fetched in a cache on the phone and manages it itself.</li>
           <li><strong>Crash reports:</strong> Crashlytics keeps them for 90 days. Temporary crash dump files may also sit on the phone until they are sent or the game is deleted.</li>
-          <li><strong>Firebase Analytics:</strong> 14 months, then deleted automatically.</li>
+          <li><strong>Firebase Analytics:</strong> data linked to your installation's identifier is kept for 14 months, then deleted automatically. Age, gender and interest data from Google Signals is kept for 2 months. Totals that identify no one, such as daily counts in reports, are kept longer.</li>
           <li><strong>Google Signals data linked to your Google account:</strong> kept by Google under its own policies.</li>
-          <li><strong>Firebase installation identifiers:</strong> until deleted, and then removed from Google's systems within about 180 days.</li>
+          <li><strong>Firebase installation identifiers:</strong> Firebase keeps them until I ask Firebase to delete them, which I do not do routinely. After deletion, Google removes them from its systems within 180 days.</li>
           <li><strong>Adapty:</strong> as long as needed to deliver and restore purchases, and as long as the law requires, for example for tax and accounting.</li>
           <li><strong>Ad data and error reports from the ads software:</strong> kept by Google under its own policies.</li>
           <li><strong>Google Play and Apple purchase records:</strong> kept by the stores under their policies.</li>
@@ -274,9 +289,14 @@
       <section aria-labelledby="rights">
         <h2 id="rights">Your rights</h2>
         <p><strong>If you are in the EEA or UK (GDPR and UK GDPR)</strong>, you can ask to access, correct or delete your data, restrict or object to its use, and receive it in a portable form. Where I use your consent, you can withdraw it at any time, without affecting what happened before. You can also complain to your local data-protection authority. In the UK, that is the Information Commissioner's Office (ico.org.uk).</p>
+        <p id="objection"><strong>Your right to object.</strong> Where I rely on legitimate interests (crash reports, remote settings, the note Adapty gets when you open the Shop, and the limited analytics pings after you decline; see <a href="#bases">Why I am allowed to use your data</a>), you can object at any time, on grounds relating to your situation, by e-mailing <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a> with "Objection" in the subject.</p>
+        <p>I will weigh your objection against my reasons and reply within one month. The game cannot switch these uses off for one person, so the sure way to stop them is to uninstall the game (see <a href="#choices">Changing or withdrawing your choices</a>). Where you gave consent, you can withdraw it at any time in <strong>Settings &#9656; Privacy choices</strong>.</p>
         <p>I make no decisions about you by automated means that have legal or similarly significant effects. Google chooses which ads to show you, and may personalise them if you allow it.</p>
         <p><strong>If you live in a US state with a privacy law</strong>, you may have the right to know, access, correct and delete your data, and to opt out of its sale or sharing and of targeted advertising. You can opt out through <strong>Settings &#9656; Privacy choices</strong> where it is shown. I do not discriminate against you for using these rights.</p>
-        <p><strong>US state notice.</strong> The game collects the following, and discloses it to Google for advertising and ad measurement (which some US state laws treat as "sale", "sharing" or targeted advertising): identifiers (advertising ID, app-instance ID, IP address), app and ad activity (including analytics data through Google Signals and Google Analytics data sharing), device information and approximate location derived from IP. It discloses to service providers (Firebase, Adapty) for running the game: identifiers, purchase history and crash and diagnostic data. Google's ads software also sends error reports to Google (see <a href="#ads">Advertising</a>). The game collects no sensitive personal information. I do not knowingly sell or share the personal data of anyone under 16. To opt out, use <strong>Settings &#9656; Privacy choices</strong>. Where your device sends an opt-out preference signal such as Global Privacy Control and Google's tool reads it, it is treated as an opt-out. If I refuse a request you may appeal by writing to <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a> with "Appeal" in the subject; I answer within 45 days, and you may then contact your state attorney general. Retention periods are in <a href="#retention">How long data is kept</a>.</p>
+        <p><strong>US state notice.</strong> The game collects the following, and discloses it to Google, and through Google to other advertising companies, for advertising and ad measurement (which some US state laws treat as "sale", "sharing" or targeted advertising): identifiers (advertising ID, app-instance ID, IP address), app and ad activity (including analytics data through Google Signals and Google Analytics data sharing), device information and approximate location derived from IP.</p>
+        <p>It discloses to service providers (Firebase, Adapty) for running the game: identifiers, purchase history and crash and diagnostic data. Google's ads software also sends error reports to Google (see <a href="#ads">Advertising</a>). The game collects this information from you and your device, through the game and the Google and Adapty software in it. The game collects no sensitive personal information. I do not knowingly sell or share the personal data of anyone under 16.</p>
+        <p>To opt out, use <strong>Settings &#9656; Privacy choices</strong>. Where your device sends an opt-out preference signal such as Global Privacy Control and Google's tool reads it, it is treated as an opt-out. To check that a request is yours, I ask for details only you are likely to have, such as the store order number of a purchase, and match them against the records I can access. You can use an authorised agent to make a request for you; I will ask the agent for your signed permission and may ask you to confirm the request with me directly.</p>
+        <p>If I refuse a request you may appeal by writing to <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a> with "Appeal" in the subject; I answer within 45 days, and you may then contact your state attorney general. Retention periods are in <a href="#retention">How long data is kept</a>.</p>
         <p>To use any right, write to <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a>. I answer within one month. Be aware that the game shows no identifier, so for data held by Google I may not be able to find your records (see <a href="delete-data.html">Delete your data</a>).</p>
       </section>
 

@@ -58,7 +58,7 @@
     <main class="reading" id="main">
       <h1>Privacy Policy</h1>
       <p class="lede">What Stackadoo keeps on your phone, what it sends to others, and what you can do about it.</p>
-      <p class="meta">Last updated: 20 November 2026. Applies to the Stackadoo game and this website.</p>
+      <p class="meta">Last updated: [[PUBLISH_DATE]]. Applies to the Stackadoo game and this website.</p>
 
       <div class="callout">
         <p><strong>The short version</strong></p>
@@ -67,7 +67,8 @@
           <li>The game is free and supported by <strong>ads</strong> (Google AdMob). Where the law requires it, Google's consent form asks you before ads are requested.</li>
           <li>Google's <strong>Firebase</strong> gives me crash reports, usage statistics and remote settings. Google Signals may link usage to your Google account if your Google account settings allow it and, where Google's consent form or a US opt-out applies, your choice there allows it. <strong>Adapty</strong> handles purchase records. Both are explained below.</li>
           <li>I do not sell your data for money. Ads served by Google may count as "selling" or "sharing" for advertising under some US state laws. You can opt out (see <a href="#rights">Your rights</a>).</li>
-          <li>The game never asks for your name, e-mail or contacts. It makes a random <strong>Support ID</strong> on your phone so I can find your data if you ask me to delete it: see <a href="#support-id">Your Support ID</a>.</li>
+          <li>The game never asks for your location. Google (ads, analytics) and Adapty still work out an approximate location, at country or region level, from your IP address.</li>
+          <li>The game never asks for your name, e-mail or contacts. But if you use Send feedback or write to me, I receive your e-mail address and what you write, and keep it for 12 months after the matter is closed (see <a href="#email">When you e-mail me</a>). The game makes a random <strong>Support ID</strong> on your phone so I can find your data if you ask me to delete it: see <a href="#support-id">Your Support ID</a>.</li>
           <li>You can object to crash reports, remote settings and the Shop note: see <a href="#objection">Your right to object</a>.</li>
         </ul>
       </div>
@@ -151,7 +152,8 @@
       <section aria-labelledby="firebase">
         <h2 id="firebase">Firebase (Google)</h2>
         <p>Stackadoo uses three <strong>Firebase</strong> services from Google. See Google's <a href="https://firebase.google.com/support/privacy" rel="external">Privacy and Security in Firebase</a> page for how Firebase handles data.</p>
-        <p>At launch, before any consent form, Firebase's start-up (which registers the installation ID), Remote Config and Crashlytics contact Google to fetch game settings, such as the ad configuration, and to send crash reports. Google's consent tool also contacts Google to check which rules apply to you. This sends the Firebase installation ID, your IP address and the details listed under Crashlytics and Remote Config below. Adapty also starts at launch (see <a href="#purchases">Purchases</a>).</p>
+        <p>At launch, before any consent form, Firebase's start-up (which registers the installation ID), Remote Config and Crashlytics contact Google to fetch game settings, such as the ad configuration, and to send crash reports. Google's consent tool also contacts Google to check which rules apply to you. This sends the Firebase installation ID, your IP address and the details listed under Crashlytics and Remote Config below.</p>
+        <p>On Android, the Google Play Games library that is part of the game also contacts Google Play services at launch, whether or not you use its features (sign-in, leaderboards, achievements and cloud save). What that library sends is Google Play services' own behaviour, under Google's privacy policy. Adapty also starts at launch (see <a href="#purchases">Purchases</a>).</p>
 
         <h3>Analytics</h3>
         <p>Firebase Analytics tells me how the game is used, such as sessions, screens, and in-game events. It uses an app-instance identifier (a random number for your installation, not your name) and device and app details such as device model, OS version, app version and an approximate location based on IP address.</p>
@@ -209,7 +211,7 @@
           <li><strong>EEA and UK (and Switzerland, where Google's tool treats it the same way):</strong> a GDPR consent message appears where Google requires one. Ads load only once Google says the game may request them.</li>
           <li><strong>US states with opt-out laws:</strong> a message lets you opt out of the sale or sharing of your data and of targeted advertising.</li>
           <li><strong>Settings &#9656; Privacy choices:</strong> this row appears in the game's Settings only where the law requires it. It reopens the form so you can change your answer at any time.</li>
-          <li><strong>iPhone and iPad:</strong> Apple's App Tracking Transparency prompt asks whether the game may track you across other companies' apps and websites. If you decline, Apple does not give the game your advertising identifier.</li>
+          <li><strong>iPhone and iPad:</strong> the game tracks you across other companies' apps and websites only if you allow it in Apple's App Tracking Transparency prompt. If you decline, or have not answered, Apple does not give the game your advertising identifier.</li>
         </ul>
         <p>If you decline, <strong>Google decides what kind of ads, if any, can be shown</strong>. The game does not show ads when Google's tool says it may not request them. Declining never blocks the game itself.</p>
 
@@ -244,7 +246,7 @@
 
       <section aria-labelledby="email">
         <h2 id="email">When you e-mail me</h2>
-        <p>I receive your e-mail address, what you write and anything you attach, such as an order number. I use it only to answer you, fix problems and handle privacy requests (contract, legitimate interests, and legal obligation for rights requests). I keep it for 12 months after the matter is closed. My e-mail is provided by Google (Gmail), which stores it on its systems under its own terms and privacy policy.</p>
+        <p><strong>If you use Send feedback or write to me, I receive your e-mail address and what you write</strong>, and anything you attach, such as an order number. I keep it for 12 months after the matter is closed. I use it only to answer you, fix problems and handle privacy requests (contract, legitimate interests, and legal obligation for rights requests). My e-mail is provided by Google (Gmail), which stores it on its systems under its own terms and privacy policy.</p>
         <p><strong>Send feedback.</strong> <strong>Settings &#9656; Help &amp; legal &#9656; Send feedback</strong>, and the low-score button on the game's rating sheet, open your own mail app with a draft addressed to me. The draft has four lines: your Support ID, the app version, your device model and the game language. The rating sheet also puts your star score in the subject.</p>
         <p>You can edit or delete any of it before you send. The game itself sends nothing: only your mail app does, and only if you send the message.</p>
       </section>
@@ -259,19 +261,25 @@
             <tbody>
               <tr><td>Internet and network state</td><td>Ads, purchases, Firebase and checking whether you are online.</td></tr>
               <tr><td>Advertising ID</td><td>Lets Google AdMob show and measure ads where allowed. On Android, Adapty may also receive it (see <a href="#purchases">Purchases</a>). You can reset or delete it any time in your phone's settings.</td></tr>
+              <tr><td>Billing (Google Play)</td><td>Lets the game start purchases through Google Play. Google Play takes the payment, and I never see your payment details.</td></tr>
               <tr><td>Vibration</td><td>Haptic feedback, if you leave it on.</td></tr>
+              <!-- PENDING stage 6 notifications: add these two rows (visible) when notifications ship, with the delete-data push-token line and the privacy section.
+              <tr><td>Notifications</td><td>Shows notifications from the game, if you allow them.</td></tr>
+              <tr><td>Run at start-up (receive boot completed)</td><td>Lets the game set its reminders again after your phone restarts.</td></tr>
+              -->
             </tbody>
           </table>
         </div>
-        <p>The game asks for <strong>no camera, microphone, location or contacts</strong> access. Some further technical permissions, such as keeping the device awake or running background work, are added automatically by the Google and Adapty software the game uses. On iPhone, the only prompt is Apple's App Tracking Transparency one described above.</p>
+        <p>The game asks for <strong>no camera, microphone or contacts</strong> access, and it never asks for your location. It does not read your GPS. When the game goes online, though, Google (ads, analytics, Remote Config) and Adapty receive your IP address and derive an <strong>approximate location</strong> from it, at country or region level.</p>
+        <p>Some further technical permissions, such as keeping the device awake or running background work, are added automatically by the Google and Adapty software the game uses, including permissions for Android's ad services (attribution and topics), which Google's ads software can use where your phone allows it. On iPhone, the only prompt is Apple's App Tracking Transparency one described above.</p>
       </section>
 
       <section aria-labelledby="never">
         <h2 id="never">What I never do</h2>
         <ul>
           <li>I never sell your data for money. Advertising through Google is described above and can be opted out of.</li>
-          <li>The game never asks for access to your contacts, photos, files, messages or precise location.</li>
-          <li>The game never asks for your name, e-mail or an account.</li>
+          <li>The game never asks for access to your contacts, photos, files, messages or precise location. Google and Adapty do derive an approximate location from your IP address (see <a href="#permissions">Permissions</a>).</li>
+          <li>The game never asks for your name, e-mail or an account. If you use Send feedback or write to me, I do receive your e-mail address and message (see <a href="#email">When you e-mail me</a>).</li>
           <li>I never build profiles of you myself. The only analysis is the usage statistics and crash reports described above, and whatever Google does within its ad services under its own policies.</li>
           <li>I never see your payment details.</li>
         </ul>
@@ -332,7 +340,7 @@
         <p>I will weigh your objection against my reasons and reply within one month. The game cannot switch these uses off for one person, so the sure way to stop them is to uninstall the game (see <a href="#choices">Changing or withdrawing your choices</a>). Where you gave consent, you can withdraw it at any time in <strong>Settings &#9656; Privacy choices</strong>.</p>
         <p>I make no decisions about you by automated means that have legal or similarly significant effects. Google chooses which ads to show you, and may personalise them if you allow it.</p>
         <p><strong>If you live in a US state with a privacy law</strong>, you may have the right to know, access, correct and delete your data, and to opt out of its sale or sharing and of targeted advertising. You can opt out through <strong>Settings &#9656; Privacy choices</strong> where it is shown. I do not discriminate against you for using these rights.</p>
-        <p><strong>US state notice.</strong> The game collects the following, and discloses it to Google, and through Google to other advertising companies, for advertising and ad measurement (which some US state laws treat as "sale", "sharing" or targeted advertising): identifiers (advertising ID, app-instance ID, Support ID, IP address), app and ad activity (including analytics data through Google Signals and Google Analytics data sharing), device information and approximate location derived from IP.</p>
+        <p><strong>US state notice.</strong> The game collects the following, and discloses it to Google, and through Google to other advertising companies, for advertising and ad measurement (which some US state laws treat as "sale", "sharing" or targeted advertising): identifiers (advertising ID, app-instance ID, Support ID, IP address), app and ad activity and purchase events (including analytics data through Google Signals and Google Analytics data sharing), device information and approximate location derived from IP.</p>
         <p>It discloses to service providers (Firebase, Adapty) for running the game: identifiers, purchase history and crash and diagnostic data. Google's ads software also sends error reports to Google (see <a href="#ads">Advertising</a>). The game collects this information from you and your device, through the game and the Google and Adapty software in it. The game collects no sensitive personal information. I do not knowingly sell or share the personal data of anyone under 16.</p>
         <p>To opt out, use <strong>Settings &#9656; Privacy choices</strong>. Where your device sends an opt-out preference signal such as Global Privacy Control and Google's tool reads it, it is treated as an opt-out.</p>
         <p>To check that a request is yours, I ask for your Support ID and, for a request to access or export your data, one more detail only you are likely to have, such as the store order number of a purchase. The code is not a password. You can use an authorised agent to make a request for you; I will ask the agent for your signed permission and may ask you to confirm the request with me directly.</p>

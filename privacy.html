@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!--
   MAINTENANCE RULE (do not delete):
-  This page describes the FIRST RELEASE build: game + AdMob/UMP + Firebase (Analytics with consent mode,
-  Crashlytics, Remote Config) + Adapty purchases. Whenever an SDK or service is added or removed, update
-  this page and terms.html and delete-data.html, and bump "Last updated". Drafted text for planned features
-  (Play Games, Game Center, cloud save, leaderboards, achievements, rating prompts, "Send feedback" e-mail)
-  lives in _work/legal/planned-sections.md and is inserted only when those features ship.
+  This page describes the shipped Android build: AdMob/UMP, Firebase (Analytics with consent mode,
+  Crashlytics, Remote Config, Cloud Messaging), Adapty purchases, Google Play Games, the Support ID,
+  Send feedback, rating prompts and Android notifications. Whenever an SDK or service is added or
+  removed, update this page, terms.html and delete-data.html, and bump "Last updated". Drafted text
+  for iOS-only features (Game Center, iCloud) lives in _work/legal/planned-sections.md until they ship.
   Analytics retention: 14 months (owner, 20 Nov 2026).
   Voice: first person singular (I / me / my), never we / us / our.
 -->
@@ -63,7 +63,7 @@
       <div class="callout">
         <p><strong>The short version</strong></p>
         <ul>
-          <li>Stackadoo has <strong>no accounts</strong> and <strong>no server of its own</strong>. Your progress, coins and settings stay on your phone.</li>
+          <li>Stackadoo has <strong>no accounts of its own</strong> and <strong>no server of its own</strong>. Your progress, coins and settings are kept on your phone. If you use Google Play Games, a backup of your progress is also kept there (see <a href="#play-games">Google Play Games</a>).</li>
           <li>The game is free and supported by <strong>ads</strong> (Google AdMob). Where the law requires it, Google's consent form asks you before ads are requested.</li>
           <li>Google's <strong>Firebase</strong> gives me crash reports, usage statistics and remote settings. Google Signals may link usage to your Google account if your Google account settings allow it and, where Google's consent form or a US opt-out applies, your choice there allows it. <strong>Adapty</strong> handles purchase records. Both are explained below.</li>
           <li>I do not sell your data for money. Ads served by Google may count as "selling" or "sharing" for advertising under some US state laws. You can opt out (see <a href="#rights">Your rights</a>).</li>
@@ -87,6 +87,7 @@
             <li><a href="#purchases">Purchases (Adapty)</a></li>
             <li><a href="#sharing">Sharing your tower picture</a></li>
             <li><a href="#ratings">Rating prompts</a></li>
+            <li><a href="#play-games">Google Play Games: leaderboards, achievements and cloud save</a></li>
             <li><a href="#notifications">Notifications</a></li>
             <li><a href="#email">When you e-mail me</a></li>
             <li><a href="#permissions">Permissions</a></li>
@@ -125,9 +126,10 @@
           <li><strong>Support ID:</strong> a random code the game makes once, so I can find your data if you ask me to delete it.</li>
           <li><strong>Rating state:</strong> how often the game has asked you to rate it, and when it last asked.</li>
           <li><strong>Notification state:</strong> your on/off choice, how often the game has asked, the last three times of day you started the Daily tower, your phone's UTC offset and which reminder lines were shown last. This stays on your phone.</li>
+          <li><strong>Play Games link:</strong> if you use Google Play Games, your Play Games player ID, so the game knows whose save it holds, and marks of which scores and achievements Google has already confirmed.</li>
           <li><strong>Privacy and ad state:</strong> a few values the game and Google's consent form store so they remember your choices.</li>
         </ul>
-        <p>Deleting the game removes this data (on Android you can also clear the game's data in the phone's settings). Your phone's own backup features, such as Android backup or iCloud backup, may copy app data depending on your phone's settings. That is controlled by your phone, not by the game.</p>
+        <p>Deleting the game removes this data (on Android you can also clear the game's data in the phone's settings). Your phone's own backup features, such as Android backup or iCloud backup, may copy app data depending on your phone's settings. That is controlled by your phone, not by the game. A cloud save in Google Play Games is a separate copy that deleting the game does not remove (see <a href="#play-games">Google Play Games</a>).</p>
         <p>The game stores no name, e-mail address or account, because it has none.</p>
       </section>
 
@@ -156,7 +158,7 @@
         <h2 id="firebase">Firebase (Google)</h2>
         <p>Stackadoo uses three <strong>Firebase</strong> services from Google. See Google's <a href="https://firebase.google.com/support/privacy" rel="external">Privacy and Security in Firebase</a> page for how Firebase handles data.</p>
         <p>At launch, before any consent form, Firebase's start-up (which registers the installation ID), Remote Config and Crashlytics contact Google to fetch game settings, such as the ad configuration, and to send crash reports. Google's consent tool also contacts Google to check which rules apply to you. This sends the Firebase installation ID, your IP address and the details listed under Crashlytics and Remote Config below.</p>
-        <p>On Android, the Google Play Games library that is part of the game also contacts Google Play services at launch, whether or not you use its features (sign-in, leaderboards, achievements and cloud save). What that library sends is Google Play services' own behaviour, under Google's privacy policy. Adapty also starts at launch (see <a href="#purchases">Purchases</a>).</p>
+        <p>On Android, the Google Play Games library that is part of the game also contacts Google Play services at launch, whether or not you have signed in to Play Games (see <a href="#play-games">Google Play Games</a>). What that library sends is Google Play services' own behaviour, under Google's privacy policy. Adapty also starts at launch (see <a href="#purchases">Purchases</a>).</p>
 
         <h3>Analytics</h3>
         <p>Firebase Analytics tells me how the game is used, such as sessions, screens, and in-game events. It uses an app-instance identifier (a random number for your installation, not your name) and device and app details such as device model, OS version, app version and an approximate location based on IP address.</p>
@@ -247,6 +249,29 @@
         <p>On Android the game may show its own one-to-five star sheet instead. The star score is recorded as a usage event in Firebase Analytics, like other game events, and only where analytics is allowed. It is not tied to any store review. A low score offers Send feedback (see <a href="#email">When you e-mail me</a>), and a higher one opens the game's store page.</p>
       </section>
 
+      <section aria-labelledby="play-games">
+        <h2 id="play-games">Google Play Games: leaderboards, achievements and cloud save</h2>
+        <p>On Android, the game uses <strong>Google Play Games</strong>. When the game starts, it asks Play Games to sign you in quietly. That works only if you already have a Play Games profile on your phone, and nothing is shown. If you are signed out, tapping <strong>Settings &#9656; Leaderboards</strong> or <strong>Settings &#9656; Achievements</strong> in the game asks you to sign in, and Google may show its own screen. If that fails or you decline, the game says so and plays on.</p>
+
+        <h3>What the game sends</h3>
+        <ul>
+          <li><strong>Leaderboards:</strong> your best Endless height and your Daily Tower height. Scores made offline are sent later. A Daily score is not sent if your phone's clock is far from Google's time. Your score appears on the leaderboard to other players, with the public name and picture from your Play Games profile, subject to that profile's visibility settings.</li>
+          <li><strong>Achievements:</strong> the achievements you unlock and your progress towards them.</li>
+          <li><strong>Cloud save:</strong> one Play Games Saved Games file, up to 3 MB, holding your progress and best height, coins, power-up counts, skins you own, Daily and streak records, tutorial flags, achievement progress, the ids of purchases already credited, counts of purchases and a random install ID. It holds no settings, name, e-mail or payment details.</li>
+        </ul>
+        <p>If two phones hold different saves, the game merges them rather than throwing one away. It cannot promise the merge is perfect.</p>
+
+        <h3>Your player ID and name</h3>
+        <p>The game reads your Play Games <strong>player ID</strong> and keeps it on your phone to link the save to you. It does not read your public name. Google's own leaderboard screens show names. I do not receive your player ID or name, and the game does not send them to Analytics, Adapty or advertisers. If a different account signs in on the same phone, the earlier player's save stays on the phone as a backup and is never sent.</p>
+
+        <h3>Google's part, clock check and analytics</h3>
+        <p>Google runs Play Games under its own terms and <a href="https://policies.google.com/privacy" rel="external">privacy policy</a>. For the scores, achievements and save it stores for the game, it acts as my service provider; for your Play Games account and profile, it acts under its own terms. Because you start the sign-in, the transfer is at your request.</p>
+        <p>To keep Daily scores honest, the game may ask the same Google server as Remote Config for the time when Play Games is available and leaderboards or cloud save are on. That request carries no ids, only your IP address and standard request data. If you allowed analytics, the game also records that a sign-in, score, achievement or cloud sync happened, without your player ID (these records do carry the height or the achievement's name).</p>
+
+        <h3>Signing out, legal basis and retention</h3>
+        <p>The game has no sign-out button. Sign out, or delete your Play Games data, in the Play Games app (see <a href="delete-data.html#play-games">Delete your data</a>). My basis for these features is contract (Art. 6(1)(b)), because they are features you use. For the quiet sign-in at launch it is my legitimate interest in offering them; you can object by e-mail or by signing out. Google keeps this data until you delete it. I do not hold it.</p>
+      </section>
+
       <section aria-labelledby="notifications">
         <h2 id="notifications">Notifications</h2>
         <p>Notifications are available on Android only for now. They are opt-in. Nothing is asked at install or first launch, and there is no push token until you switch them on. The game asks at a good moment after a Daily goal or a streak reward, or when you flip <strong>Settings &#9656; Notifications</strong>. It asks first with its own card and then with your phone's permission dialog (Android 13 and newer).</p>
@@ -299,7 +324,7 @@
         <ul>
           <li>I never sell your data for money. Advertising through Google is described above and can be opted out of.</li>
           <li>The game never asks for access to your contacts, photos, files, messages or precise location. Google and Adapty do derive an approximate location from your IP address (see <a href="#permissions">Permissions</a>).</li>
-          <li>The game never asks for your name, e-mail or an account. If you use Send feedback or write to me, I do receive your e-mail address and message (see <a href="#email">When you e-mail me</a>).</li>
+          <li>The game never asks for your name, e-mail or an account of its own. Google Play Games, if you use it, is Google's account, not mine. If you use Send feedback or write to me, I do receive your e-mail address and message (see <a href="#email">When you e-mail me</a>).</li>
           <li>I never build profiles of you myself. The only analysis is the usage statistics and crash reports described above, and whatever Google does within its ad services under its own policies.</li>
           <li>I never see your payment details.</li>
         </ul>
@@ -342,6 +367,7 @@
         <ul>
           <li><strong>On your phone:</strong> until you delete the game or clear its data.</li>
           <li><strong>Support ID:</strong> on your phone until you delete the game or clear its data (Android's backup may restore it). Records that carry it are kept as set out in the entries below for each service.</li>
+          <li><strong>Play Games data (scores, achievements, cloud save):</strong> kept by Google until you delete it. Your player ID stays on your phone until you delete the game or clear its data.</li>
           <li><strong>Push token:</strong> kept by Google until you switch notifications off in the game, which deletes it. If you uninstall the game without switching off, Google removes the token on its own schedule. Reminder times stay on your phone until you delete the game or clear its data.</li>
           <li><strong>Remote settings on your phone:</strong> Firebase keeps the last settings it fetched in a cache on the phone and manages it itself.</li>
           <li><strong>Crash reports:</strong> Crashlytics keeps them for 90 days. Temporary crash dump files may also sit on the phone until they are sent or the game is deleted.</li>
@@ -363,7 +389,8 @@
         <p>I make no decisions about you by automated means that have legal or similarly significant effects. Google chooses which ads to show you, and may personalise them if you allow it.</p>
         <p><strong>If you live in a US state with a privacy law</strong>, you may have the right to know, access, correct and delete your data, and to opt out of its sale or sharing and of targeted advertising. You can opt out through <strong>Settings &#9656; Privacy choices</strong> where it is shown. I do not discriminate against you for using these rights.</p>
         <p><strong>US state notice.</strong> The game collects the following, and discloses it to Google, and through Google to other advertising companies, for advertising and ad measurement (which some US state laws treat as "sale", "sharing" or targeted advertising): identifiers (advertising ID, app-instance ID, Support ID, IP address), app and ad activity and purchase events (including analytics data through Google Signals and Google Analytics data sharing), device information and approximate location derived from IP.</p>
-        <p>It discloses to service providers (Firebase, Adapty) for running the game: identifiers (including a push token, if you switch on news notifications), purchase history and crash and diagnostic data. Google's ads software also sends error reports to Google (see <a href="#ads">Advertising</a>). The game collects this information from you and your device, through the game and the Google and Adapty software in it. The game collects no sensitive personal information. I do not knowingly sell or share the personal data of anyone under 16.</p>
+        <p>It discloses to service providers (Firebase, Adapty, and Google Play Games if you use it) for running the game: identifiers (including a push token, if you switch on news notifications), purchase history, crash and diagnostic data and, if you use Play Games, your scores, achievements and cloud save.</p>
+        <p>Google's ads software also sends error reports to Google (see <a href="#ads">Advertising</a>). The game collects this information from you and your device, through the game and the Google and Adapty software in it. The game collects no sensitive personal information. I do not knowingly sell or share the personal data of anyone under 16.</p>
         <p>To opt out, use <strong>Settings &#9656; Privacy choices</strong>. Where your device sends an opt-out preference signal such as Global Privacy Control and Google's tool reads it, it is treated as an opt-out.</p>
         <p>To check that a request is yours, I ask for your Support ID and, for a request to access or export your data, one more detail only you are likely to have, such as the store order number of a purchase. The code is not a password. You can use an authorised agent to make a request for you; I will ask the agent for your signed permission and may ask you to confirm the request with me directly.</p>
         <p>If I refuse a request you may appeal by writing to <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a> with "Appeal" in the subject; I answer within 45 days, and you may then contact your state attorney general. Retention periods are in <a href="#retention">How long data is kept</a>.</p>

@@ -58,7 +58,7 @@
     <main class="reading" id="main">
       <h1>Privacy Policy</h1>
       <p class="lede">What Stackadoo keeps on your phone, what it sends to others, and what you can do about it.</p>
-      <p class="meta">Last updated: [[PUBLISH_DATE]]. Applies to the Stackadoo game and this website.</p>
+      <p class="meta">Last updated: 21 November 2026. Applies to the Stackadoo game and this website.</p>
 
       <div class="callout">
         <p><strong>The short version</strong></p>
@@ -67,6 +67,7 @@
           <li>The game is free and supported by <strong>ads</strong> (Google AdMob). Where the law requires it, Google's consent form asks you before ads are requested.</li>
           <li>Google's <strong>Firebase</strong> gives me crash reports, usage statistics and remote settings. Google Signals may link usage to your Google account if your Google account settings allow it and, where Google's consent form or a US opt-out applies, your choice there allows it. <strong>Adapty</strong> handles purchase records. Both are explained below.</li>
           <li>I do not sell your data for money. Ads served by Google may count as "selling" or "sharing" for advertising under some US state laws. You can opt out (see <a href="#rights">Your rights</a>).</li>
+          <li>Notifications are off until you switch them on in <strong>Settings &#9656; Notifications</strong>. A Daily reminder is scheduled on your phone; news messages use Google's Firebase Cloud Messaging (see <a href="#notifications">Notifications</a>).</li>
           <li>The game never asks for your location. Google (ads, analytics) and Adapty still work out an approximate location, at country or region level, from your IP address.</li>
           <li>The game never asks for your name, e-mail or contacts. But if you use Send feedback or write to me, I receive your e-mail address and what you write, and keep it for 12 months after the matter is closed (see <a href="#email">When you e-mail me</a>). The game makes a random <strong>Support ID</strong> on your phone so I can find your data if you ask me to delete it: see <a href="#support-id">Your Support ID</a>.</li>
           <li>You can object to crash reports, remote settings and the Shop note: see <a href="#objection">Your right to object</a>.</li>
@@ -86,6 +87,7 @@
             <li><a href="#purchases">Purchases (Adapty)</a></li>
             <li><a href="#sharing">Sharing your tower picture</a></li>
             <li><a href="#ratings">Rating prompts</a></li>
+            <li><a href="#notifications">Notifications</a></li>
             <li><a href="#email">When you e-mail me</a></li>
             <li><a href="#permissions">Permissions</a></li>
             <li><a href="#never">What I never do</a></li>
@@ -122,6 +124,7 @@
           <li><strong>Purchase records:</strong> which purchases you have made (for example the No Ads Pass), so the game never grants the same purchase twice.</li>
           <li><strong>Support ID:</strong> a random code the game makes once, so I can find your data if you ask me to delete it.</li>
           <li><strong>Rating state:</strong> how often the game has asked you to rate it, and when it last asked.</li>
+          <li><strong>Notification state:</strong> your on/off choice, how often the game has asked, the last three times of day you started the Daily tower, your phone's UTC offset and which reminder lines were shown last. This stays on your phone.</li>
           <li><strong>Privacy and ad state:</strong> a few values the game and Google's consent form store so they remember your choices.</li>
         </ul>
         <p>Deleting the game removes this data (on Android you can also clear the game's data in the phone's settings). Your phone's own backup features, such as Android backup or iCloud backup, may copy app data depending on your phone's settings. That is controlled by your phone, not by the game.</p>
@@ -130,7 +133,7 @@
 
       <section aria-labelledby="device">
         <h2 id="device">What is stored on or read from your device</h2>
-        <p>The game and its services keep small items on your phone and read some device details: the settings file described above, Google's consent values, Firebase's random installation and app-instance identifiers, your Support ID, Adapty's profile ID, and the advertising ID where allowed. Where the law requires consent for ads and analytics (EEA and UK), I ask through Google's consent form.</p>
+        <p>The game and its services keep small items on your phone and read some device details: the settings file described above, Google's consent values, Firebase's random installation and app-instance identifiers, your Support ID, Adapty's profile ID, the advertising ID where allowed, and, if you switch on news notifications, a push token. Where the law requires consent for ads and analytics (EEA and UK), I ask through Google's consent form.</p>
         <p>Crash reporting and purchase handling run without asking, because they are needed to keep the game stable and to deliver what you buy. Once the game has started Google's ads software (only after Google's consent tool says the game may request ads), it can also send Google error reports, as described under <a href="#ads">Advertising</a>. Remote settings also run without asking and use the Firebase installation identifier; you can object to this by e-mail (see <a href="#rights">Your rights</a>).</p>
       </section>
 
@@ -173,7 +176,7 @@
         <p>If Google's consent tool cannot answer during a launch (for example when you are offline), the game may keep what it did on your last launch, so analytics events and the Support ID can carry on until the tool answers or you change your answer in <strong>Settings &#9656; Privacy choices</strong>. It is a random code, not your name.</p>
         <p>Analytics collects some events automatically, such as first open, session start, app updates and screen views. If you buy something, or see or tap an ad, it may record that too.</p>
         <p>The game also records what you do in it: runs and results, heights, power-ups, coins earned and spent, the Shop, the Daily Tower and tutorial steps, settings changes, purchase outcomes, consent outcomes, and ad events (an ad shown or tapped, how long a banner was on screen before a tap, and the ad revenue Google reports for each ad shown). The set may grow.</p>
-        <p>Analytics also keeps a few properties about your installation: your game language, whether you own the No Ads Pass, a banded best height, and tutorial progress. The game sends them again at each launch, also after a decline; Google says it does not keep them while analytics storage is denied.</p>
+        <p>Analytics also keeps a few properties about your installation: your game language, whether you own the No Ads Pass, a banded best height, tutorial progress, and your notification state. The game sends them again at each launch, also after a decline; Google says it does not keep them while analytics storage is denied.</p>
 
         <h3>Google Signals and data sharing</h3>
         <p>I have turned on <strong>Google Signals</strong> in Google Analytics. If you are signed in to a Google account on your device and have ad personalisation turned on in that account, Google can connect the game's analytics data with your Google account. This turns on Google Analytics' advertising features: cross-device reporting, demographics and interests reporting (aggregated age ranges and interests), and the building of ad audiences (remarketing) for Google's advertising. To provide them, Google Analytics uses the game's own app-instance identifier together with Google's advertising identifiers, such as your device's advertising ID where allowed.</p>
@@ -244,6 +247,25 @@
         <p>On Android the game may show its own one-to-five star sheet instead. The star score is recorded as a usage event in Firebase Analytics, like other game events, and only where analytics is allowed. It is not tied to any store review. A low score offers Send feedback (see <a href="#email">When you e-mail me</a>), and a higher one opens the game's store page.</p>
       </section>
 
+      <section aria-labelledby="notifications">
+        <h2 id="notifications">Notifications</h2>
+        <p>Notifications are available on Android only for now. They are opt-in. Nothing is asked at install or first launch, and there is no push token until you switch them on. The game asks at a good moment after a Daily goal or a streak reward, or when you flip <strong>Settings &#9656; Notifications</strong>. It asks first with its own card and then with your phone's permission dialog (Android 13 and newer).</p>
+
+        <h3>Daily reminder</h3>
+        <p>The reminder is scheduled on your phone and nothing is sent through any server. It appears at most once a day, never between 22:00 and 08:59 local time, and only when today's Daily tower is waiting. To choose the time, your phone keeps, on the phone only, the last three times of day you started the Daily, your UTC offset, which reminder lines were shown last, and your on/off choice.</p>
+
+        <h3>News messages (Firebase Cloud Messaging)</h3>
+        <p>News messages start only when you have switched notifications on, your phone allows them, and you have answered Google's consent form. Any answer counts: this is not tied to your ads or analytics choice. Firebase then creates a <strong>push token</strong> for your installation, using the Firebase installation ID. The game subscribes it to the topic <code>announcements</code> and to a topic for your game language, such as <code>lang_en</code>.</p>
+        <p>Google processes the token for me to deliver the messages. I send them to those topics from the Firebase console. The game sends the token nowhere else. Notifications never give rewards.</p>
+
+        <h3>Notification analytics</h3>
+        <p>If you allowed analytics, the game records events such as the notification card shown and answered, the permission result, a reminder scheduled or opened, a news message opened, and topics subscribed or unsubscribed. It also sets a user property for your notification state. If you did not allow analytics, they are sent at most as the limited events described under Firebase, or not at all where analytics has not started. See <a href="#firebase">Firebase</a>.</p>
+
+        <h3>Turning notifications off</h3>
+        <p>Switch off <strong>Settings &#9656; Notifications</strong> in the game. That cancels the pending reminders, unsubscribes the topics and deletes the push token. You can also turn notifications off in your phone's settings. That stops them being shown, and the game notices when you return and stops scheduling reminders.</p>
+        <p>My legal basis for news messages is your consent (Art. 6(1)(a)): switching them on and allowing them on your phone. The switch is how you withdraw it. The game has no separate "delete my data" button for notifications. See <a href="delete-data.html#notifications">Delete your data</a>.</p>
+      </section>
+
       <section aria-labelledby="email">
         <h2 id="email">When you e-mail me</h2>
         <p><strong>If you use Send feedback or write to me, I receive your e-mail address and what you write</strong>, and anything you attach, such as an order number. I keep it for 12 months after the matter is closed. I use it only to answer you, fix problems and handle privacy requests (contract, legitimate interests, and legal obligation for rights requests). My e-mail is provided by Google (Gmail), which stores it on its systems under its own terms and privacy policy.</p>
@@ -263,15 +285,13 @@
               <tr><td>Advertising ID</td><td>Lets Google AdMob show and measure ads where allowed. On Android, Adapty may also receive it (see <a href="#purchases">Purchases</a>). You can reset or delete it any time in your phone's settings.</td></tr>
               <tr><td>Billing (Google Play)</td><td>Lets the game start purchases through Google Play. Google Play takes the payment, and I never see your payment details.</td></tr>
               <tr><td>Vibration</td><td>Haptic feedback, if you leave it on.</td></tr>
-              <!-- PENDING stage 6 notifications: add these two rows (visible) when notifications ship, with the delete-data push-token line and the privacy section.
-              <tr><td>Notifications</td><td>Shows notifications from the game, if you allow them.</td></tr>
-              <tr><td>Run at start-up (receive boot completed)</td><td>Lets the game set its reminders again after your phone restarts.</td></tr>
-              -->
+              <tr><td>Notifications (Android 13 and newer)</td><td>Lets the game show its Daily reminder and news messages, if you allow them.</td></tr>
+              <tr><td>Receive boot completed</td><td>Lets the game set its Daily reminder again after your phone restarts.</td></tr>
             </tbody>
           </table>
         </div>
         <p>The game asks for <strong>no camera, microphone or contacts</strong> access, and it never asks for your location. It does not read your GPS. When the game goes online, though, Google (ads, analytics, Remote Config) and Adapty receive your IP address and derive an <strong>approximate location</strong> from it, at country or region level.</p>
-        <p>Some further technical permissions, such as keeping the device awake or running background work, are added automatically by the Google and Adapty software the game uses, including permissions for Android's ad services (attribution and topics), which Google's ads software can use where your phone allows it. On iPhone, the only prompt is Apple's App Tracking Transparency one described above.</p>
+        <p>Some further technical permissions, such as keeping the device awake or running background work, are added automatically by the Google and Adapty software the game uses, including permissions for Android's ad services (attribution and topics), which Google's ads software can use where your phone allows it. On iPhone, the only prompt is Apple's App Tracking Transparency one described above; the game has no notifications on iPhone yet. The game uses no exact-alarm permission.</p>
       </section>
 
       <section aria-labelledby="never">
@@ -303,6 +323,7 @@
         <ul>
           <li><strong>Contract (Art. 6(1)(b))</strong>: the on-phone data, and Adapty's delivery, checking and restoring of your purchases, including the Support ID as its customer ID.</li>
           <li><strong>Consent (Art. 6(1)(a))</strong>: personalised ads, ad measurement, analytics storage (including the Support ID as the Analytics user ID), Google Signals and Google Analytics data sharing, where Google's consent form asks you. You can withdraw it at any time (see <a href="#choices">Changing or withdrawing your choices</a>).</li>
+          <li><strong>Consent for notifications (Art. 6(1)(a))</strong>: the push token and topics for news messages, when you switch notifications on and allow them. Switching them off withdraws it (see <a href="#notifications">Notifications</a>).</li>
           <li><strong>Legitimate interests (Art. 6(1)(f))</strong>: (a) crash reports: my interest in finding and fixing crashes so the game stays stable and secure; (b) remote settings: my interest in adjusting game and ad settings, such as how often ads appear, without an update, so the game can stay free and balanced; (c) the Support ID on crash reports, and in support and rights requests, so I can match your reports, purchases and e-mails and answer you; (d) the note Adapty gets when you open the Shop, and the limited, aggregate pings Google's analytics can still receive after you decline: my interest in knowing, in aggregate, how the game and its Shop are used. The data is small and technical, includes no names, and I do not build profiles from it. I also use the law's requirement to answer rights requests (Art. 6(1)(c)) when I handle them. You can object (see <a href="#rights">Your rights</a>).</li>
           <li><strong>Outside the EEA and UK</strong>, where no consent form is shown because the law there does not require one, analytics, Google Signals and ad settings are on. I rely on my legitimate interest in understanding how the game is used and in showing the ads that keep it free. You can limit this by resetting your advertising ID, turning off tracking on iPhone, or writing to me.</li>
         </ul>
@@ -321,6 +342,7 @@
         <ul>
           <li><strong>On your phone:</strong> until you delete the game or clear its data.</li>
           <li><strong>Support ID:</strong> on your phone until you delete the game or clear its data (Android's backup may restore it). Records that carry it are kept as set out in the entries below for each service.</li>
+          <li><strong>Push token:</strong> kept by Google until you switch notifications off in the game, which deletes it. If you uninstall the game without switching off, Google removes the token on its own schedule. Reminder times stay on your phone until you delete the game or clear its data.</li>
           <li><strong>Remote settings on your phone:</strong> Firebase keeps the last settings it fetched in a cache on the phone and manages it itself.</li>
           <li><strong>Crash reports:</strong> Crashlytics keeps them for 90 days. Temporary crash dump files may also sit on the phone until they are sent or the game is deleted.</li>
           <li><strong>Firebase Analytics:</strong> data linked to your installation's identifier is kept for 14 months after the last time you play, then deleted automatically. Age, gender and interest data from Google Signals is kept for 2 months. Totals that identify no one, such as daily counts in reports, are kept longer.</li>
@@ -341,7 +363,7 @@
         <p>I make no decisions about you by automated means that have legal or similarly significant effects. Google chooses which ads to show you, and may personalise them if you allow it.</p>
         <p><strong>If you live in a US state with a privacy law</strong>, you may have the right to know, access, correct and delete your data, and to opt out of its sale or sharing and of targeted advertising. You can opt out through <strong>Settings &#9656; Privacy choices</strong> where it is shown. I do not discriminate against you for using these rights.</p>
         <p><strong>US state notice.</strong> The game collects the following, and discloses it to Google, and through Google to other advertising companies, for advertising and ad measurement (which some US state laws treat as "sale", "sharing" or targeted advertising): identifiers (advertising ID, app-instance ID, Support ID, IP address), app and ad activity and purchase events (including analytics data through Google Signals and Google Analytics data sharing), device information and approximate location derived from IP.</p>
-        <p>It discloses to service providers (Firebase, Adapty) for running the game: identifiers, purchase history and crash and diagnostic data. Google's ads software also sends error reports to Google (see <a href="#ads">Advertising</a>). The game collects this information from you and your device, through the game and the Google and Adapty software in it. The game collects no sensitive personal information. I do not knowingly sell or share the personal data of anyone under 16.</p>
+        <p>It discloses to service providers (Firebase, Adapty) for running the game: identifiers (including a push token, if you switch on news notifications), purchase history and crash and diagnostic data. Google's ads software also sends error reports to Google (see <a href="#ads">Advertising</a>). The game collects this information from you and your device, through the game and the Google and Adapty software in it. The game collects no sensitive personal information. I do not knowingly sell or share the personal data of anyone under 16.</p>
         <p>To opt out, use <strong>Settings &#9656; Privacy choices</strong>. Where your device sends an opt-out preference signal such as Global Privacy Control and Google's tool reads it, it is treated as an opt-out.</p>
         <p>To check that a request is yours, I ask for your Support ID and, for a request to access or export your data, one more detail only you are likely to have, such as the store order number of a purchase. The code is not a password. You can use an authorised agent to make a request for you; I will ask the agent for your signed permission and may ask you to confirm the request with me directly.</p>
         <p>If I refuse a request you may appeal by writing to <a href="mailto:mkhakpaki.ksas@gmail.com">mkhakpaki.ksas@gmail.com</a> with "Appeal" in the subject; I answer within 45 days, and you may then contact your state attorney general. Retention periods are in <a href="#retention">How long data is kept</a>.</p>
@@ -354,6 +376,7 @@
           <li><strong>Ads and analytics consent:</strong> open <strong>Settings &#9656; Privacy choices</strong> where it is shown, and change your answer. If Google's tool then no longer allows ads, Google's ads software, including its error reports, is not started from the next time you open the game.</li>
           <li><strong>Advertising ID:</strong> reset or delete it in your phone's settings, or on iPhone turn off tracking for the game.</li>
           <li><strong>Google's ad settings:</strong> manage them at <a href="https://myadcenter.google.com" rel="external">myadcenter.google.com</a>.</li>
+          <li><strong>Notifications:</strong> switch off <strong>Settings &#9656; Notifications</strong> in the game, or turn them off in your phone's settings.</li>
           <li><strong>Crash reports and remote settings</strong> are always on. You can object by e-mail, or stop all of it by uninstalling the game.</li>
         </ul>
       </section>

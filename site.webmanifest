@@ -8,7 +8,10 @@
   "background_color": "#6fbfff",
   "theme_color": "#6fbfff",
   "prefer_related_applications": true,
-  "related_applications": [],
+  "related_applications": [
+    { "platform": "play", "id": "com.mkhakpaki.stackadoo.android", "url": "https://play.google.com/store/apps/details?id=com.mkhakpaki.stackadoo.android" },
+    { "platform": "itunes", "id": "6837267261", "url": "https://apps.apple.com/app/id6837267261" }
+  ],
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }

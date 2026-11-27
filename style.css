@@ -426,3 +426,37 @@ main.reading > h1 { font-size: clamp(2rem, 7vw, 2.8rem); margin-block-end: 0.3em
   a { color: #000; }
 }
 .card > .disc { margin-block-end: 10px; }
+
+/* ---------- Store badges (official artwork, unaltered; same height) ---------- */
+.store-badges { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 14px; --badge-h: 52px; }
+.store-badge { display: inline-flex; min-block-size: var(--tap); border-radius: 8px; }
+.store-badge img { display: block; block-size: var(--badge-h); inline-size: auto; }
+.store-badge:hover { filter: brightness(1.08); }
+
+/* ---------- Header: Get the game link ---------- */
+.nav a.nav-get { background: var(--white); color: var(--ink); }
+.nav a.nav-get:hover { background: #eef5fd; }
+@media (max-width: 559px) {
+  .nav-long { position: absolute; inline-size: 1px; block-size: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+
+/* ---------- Get page (get.html): one white card on the sky ---------- */
+.page-get {
+  min-block-size: 100vh; display: grid; place-items: center; padding: 24px var(--gutter);
+  background: linear-gradient(var(--sky-top), var(--sky-bottom)) no-repeat var(--sky-pale);
+}
+main.get {
+  inline-size: 100%; max-inline-size: 440px; padding: 32px 24px 24px; text-align: center;
+  background: var(--white); color: var(--ink); border-radius: var(--r-sheet); box-shadow: 0 6px 0 rgba(15, 20, 50, 0.18);
+}
+.get-icon { inline-size: 96px; block-size: 96px; margin: 0 auto 16px; border-radius: 22px; box-shadow: 0 4px 0 rgba(15, 20, 50, 0.2); }
+main.get h1 { font-size: clamp(2rem, 8vw, 2.5rem); margin-block-end: 0.2em; }
+.get-lede { font-weight: 600; font-size: 1.25rem; margin-block-end: 0.2em; }
+.get-sub { color: var(--ink-soft); margin-block-end: 22px; }
+.page-get .store-badges { justify-content: center; }
+.page-get .is-ios { flex-direction: column; }
+.page-get .is-ios .store-badge--appstore img { block-size: 68px; }
+.get-hint { margin-block: 20px 0; font-size: 1rem; color: var(--ink-soft); }
+.get-legal { margin-block: 28px 0 0; font-size: 0.75rem; line-height: 1.5; color: var(--ink-soft); max-width: 36ch; margin-inline: auto; }
+.get-home { margin-block: 8px 0; }
+.get-home a { display: inline-flex; align-items: center; min-block-size: var(--tap); }

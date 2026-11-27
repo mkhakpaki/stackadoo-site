@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Landing page for the link at the end of the game's "share my tower" text. GitHub Pages serves it at /get. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Stackadoo: free on Android and iPhone</title>
+  <meta name="description" content="Stackadoo is a free tower-stacking game with wobbly block characters. Get it on Google Play or the App Store.">
+  <meta name="theme-color" content="#6fbfff">
+  <link rel="canonical" href="https://mkhakpaki.github.io/stackadoo-site/get">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:site_name" content="Stackadoo">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Get Stackadoo: free on Android and iPhone">
+  <meta property="og:description" content="Build it tall. Watch it wobble. Get Stackadoo on Google Play or the App Store.">
+  <meta property="og:url" content="https://mkhakpaki.github.io/stackadoo-site/get">
+  <meta property="og:image" content="https://mkhakpaki.github.io/stackadoo-site/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Stackadoo app icon and logo on a sky-blue background, with the line Build it tall. Watch it wobble.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Get Stackadoo: free on Android and iPhone">
+  <meta name="twitter:description" content="Build it tall. Watch it wobble. Get Stackadoo on Google Play or the App Store.">
+  <meta name="twitter:image" content="https://mkhakpaki.github.io/stackadoo-site/og-image.png">
+  <meta name="twitter:image:alt" content="The Stackadoo app icon and logo on a sky-blue background, with the line Build it tall. Watch it wobble.">
+  <link rel="preload" href="fonts/Baloo2-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-get">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main class="get" id="main">
+    <img class="get-icon" src="icon-192.png" alt="" width="96" height="96">
+    <h1>Get Stackadoo</h1>
+    <p class="get-lede">Build it tall. Watch it wobble.</p>
+    <p class="get-sub">A free tower-stacking game with ads and optional in-app purchases.</p>
+
+    <!-- Both badges are real links, so the page works with JavaScript off. The script below only
+         re-orders them and passes the incoming query string on. The store URLs live here, in one place. -->
+    <div class="store-badges" id="badges">
+      <a class="store-badge store-badge--play" id="playBadge" href="https://play.google.com/store/apps/details?id=com.mkhakpaki.stackadoo.android" rel="noopener"><img src="google-play-badge.png" alt="Get it on Google Play" width="175" height="52"></a>
+      <a class="store-badge store-badge--appstore" id="appStoreBadge" href="https://apps.apple.com/app/id6837267261" rel="noopener"><img src="app-store-badge.svg" alt="Download on the App Store" width="156" height="52"></a>
+    </div>
+
+    <p class="get-hint" id="hint">On a computer? Open this link on your phone.</p>
+    <p class="get-home"><a href="./">Back to Stackadoo</a></p>
+    <p class="get-legal">Google Play and the Google Play logo are trademarks of Google LLC. Apple, the Apple logo and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+  </main>
+<script>
+(function () {
+  // Set to true once the App Store listing is live.
+  var IOS_REDIRECT = false;
+
+  var badges = document.getElementById("badges");
+  var playEl = document.getElementById("playBadge");
+  var appStoreEl = document.getElementById("appStoreBadge");
+  var hint = document.getElementById("hint");
+
+  // Carry the whole incoming query string through to the store links.
+  var query = location.search;
+  var rawQuery = query.replace(/^\?/, "");
+  var PLAY_URL = playEl.href; // already has ?id=..., so append with &
+  var APP_STORE_URL = appStoreEl.href;
+  var play = rawQuery ? PLAY_URL + "&" + rawQuery : PLAY_URL;
+  var appStore = APP_STORE_URL + query;
+  playEl.href = play;
+  appStoreEl.href = appStore;
+
+  var ua = navigator.userAgent || "";
+  var isAndroid = /Android/i.test(ua);
+  // iPadOS 13+ reports itself as a Mac; treat a touch-capable Mac as an iPad.
+  var isIOS = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/i.test(ua) && "ontouchend" in document);
+
+  // Built with DOM calls, never innerHTML: the URL carries whatever the visitor arrived with.
+  function setHint(text, url) {
+    hint.textContent = text + " ";
+    var a = document.createElement("a");
+    a.href = url;
+    a.textContent = "Open manually";
+    hint.appendChild(a);
+  }
+
+  if (isAndroid) {
+    setHint("Taking you to Google Play…", play);
+    location.replace(play);
+  } else if (isIOS) {
+    badges.insertBefore(appStoreEl, playEl); // lead with the store they can use
+    badges.className += " is-ios";
+    if (IOS_REDIRECT) {
+      setHint("Taking you to the App Store…", appStore);
+      location.replace(appStore);
+    } else {
+      hint.textContent = "Tap a badge to get the game.";
+    }
+  }
+  // Desktop and everything else: both badges, side by side, no redirect.
+})();
+</script>
+</body>
+</html>
